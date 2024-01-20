@@ -25,7 +25,7 @@ with open('resources/clansettings.json', 'r', encoding='utf-8') as f:
 
 class ClanSettingsScreen(Screens):
     """
-    Screen handles all Clan-specific settings
+    Screen handles all Mischief-specific settings
     """
     text_size = {
         '0': 'small',
@@ -212,7 +212,7 @@ class ClanSettingsScreen(Screens):
             (1360 / 1600 * screen_x, (n * 78 + 80) / 1400 * screen_y))
 
         self.checkboxes_text['instr'] = pygame_gui.elements.UITextBox(
-            "Change the general Clan-specific settings",
+            "Change the general Mischief-specific settings",
             scale(pygame.Rect((200, 370), (1200, 100))),
             object_id=get_text_box_theme("#text_box_30_horizcenter"),
             manager=MANAGER)
@@ -251,7 +251,7 @@ class ClanSettingsScreen(Screens):
             n += 1
 
         self.checkboxes_text['instr'] = pygame_gui.elements.UITextBox(
-            "Change Clan-specific settings regarding cat roles",
+            "Change Mischief-specific settings regarding rat roles",
             scale(pygame.Rect((200, 370), (1200, 100))),
             object_id=get_text_box_theme("#text_box_30_horizcenter"),
             manager=MANAGER)
@@ -285,7 +285,7 @@ class ClanSettingsScreen(Screens):
             n += 1
 
         self.checkboxes_text['instr'] = pygame_gui.elements.UITextBox(
-            "Change Clan-specific settings regarding cat relationships",
+            "Change Mischief-specific settings regarding rat relationships",
             scale(pygame.Rect((200, 370), (1200, 100))),
             object_id=get_text_box_theme("#text_box_30_horizcenter"),
             manager=MANAGER)
@@ -349,19 +349,19 @@ class ClanSettingsScreen(Screens):
             elif cat.status in ("newborn", "kitten"):
                 kits += 1
                     
-        text = f"Living Clan Cats: {living_cats}\n" \
-        f"StarClan Cats: {starclan}\n" \
-        f"Dark Forest Cats: {df}\n" \
-        f"Unknown Residence Cats: {ur}\n" \
-        f"Medicine Cats: {med_cats}\n" \
-        f"Medicine Cat Apprentices: {med_cat_apprentices}\n" \
-        f"Warriors: {warriors}\n" \
-        f"Warrior Apprentices: {warrior_apprentices}\n" \
+        text = f"Living Mischief Rats: {living_cats}\n" \
+        f"StarColony Rats: {starclan}\n" \
+        f"Dark Forest Rats: {df}\n" \
+        f"Unknown Residence Rats: {ur}\n" \
+        f"Medicine Rats: {med_cats}\n" \
+        f"Medicine Rat Apprentices: {med_cat_apprentices}\n" \
+        f"Scavengers: {warriors}\n" \
+        f"Scavenger Apprentices: {warrior_apprentices}\n" \
         f"Mediators: {mediators}\n" \
         f"Mediators Apprentices: {mediator_apprentices}\n" \
         f"Elders: {elders}\n" \
-        f"Kittens and Newborns: {kits}\n" \
-        f"Faded Cats: {faded_cats}"
+        f"Pups and Pinkies: {kits}\n" \
+        f"Faded Rats: {faded_cats}"
         
         self.checkboxes_text["stat_box"] = pygame_gui.elements.UITextBox(text,
                                                                          scale(pygame.Rect((300, 400, 1060, 690))),

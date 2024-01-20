@@ -195,13 +195,13 @@ class ClearingScreen(Screens):
             (1450, 50), (68, 68))),
             "",
             object_id="#help_button", manager=MANAGER,
-            tool_tip_text="Your clan will catch some amount of prey over each timeskip, but successful hunting patrols are the most "
+            tool_tip_text="Your mischief will catch some amount of prey over each timeskip, but successful hunting patrols are the most "
                           "important source of freshkill. You can see what was consumed and catched in the Log below! "
                           "Freshkill can't be stored endlessly, after four moons prey will rot and will be thrown away. "
-                          "Cats under 3 moons with a parent(queen) taking care of them, don't need food. "
+                          "Rats under 3 moons with a parent(queen) taking care of them, don't need food. "
                           "<br><br>"
-                          "Feeding the Clan is very important, therefore cats will be fed before any changes to rank. "
-                          "Hover your mouse over the pile to see the current amount and the needed amount of prey of your Clan! ",
+                          "Feeding the Mischief is very important, therefore rats will be fed before any changes to rank. "
+                          "Hover your mouse over the pile to see the current amount and the needed amount of prey of your Mischief! ",
         )
         self.last_page = UIImageButton(scale(pygame.Rect((660, 1272), (68, 68))), "", object_id="#arrow_left_button"
                                        , manager=MANAGER)
@@ -287,26 +287,26 @@ class ClearingScreen(Screens):
         needed_amount = game.clan.freshkill_pile.amount_food_needed()
         warrior_need = game.prey_config["prey_requirement"]["warrior"]
         warrior_amount = int(current_prey_amount / warrior_need) 
-        general_text = f"Up to {warrior_amount} warriors can be fed with this amount of prey."
+        general_text = f"Up to {warrior_amount} scavengers can be fed with this amount of prey."
 
         concern_text = "This should not appear."
         if current_prey_amount == 0:
-            concern_text = "The fresh-kill pile is empty, the Clan desperately needs prey!"
+            concern_text = "The fresh-kill pile is empty, the Mischief desperately needs prey!"
             self.pile_size = "#freshkill_pile_empty"
         elif 0 < current_prey_amount <= needed_amount / 2:
-            concern_text = "The fresh-kill pile can't even feed half of the Clan. Hunting patrols should be organized immediately."
+            concern_text = "The fresh-kill pile can't even feed half of the Mischief. Hunting patrols should be organized immediately."
             self.pile_size = "#freshkill_pile_verylow"
         elif needed_amount / 2 < current_prey_amount <= needed_amount:
-            concern_text = "Only half of the Clan can be fed currently. Hunting patrols should be organized."
+            concern_text = "Only half of the Mischief can be fed currently. Hunting patrols should be organized."
             self.pile_size = "#freshkill_pile_low"
         elif needed_amount < current_prey_amount <= needed_amount * 1.5:
-            concern_text = "Every mouth of the Clan can be fed, but some more prey would not harm."
+            concern_text = "Every mouth of the Mischief can be fed, but some more prey would not harm."
             self.pile_size = "#freshkill_pile_average"
         elif needed_amount * 1.5 < current_prey_amount <= needed_amount * 2.5:
-            concern_text = "The fresh-kill pile is overflowing and the Clan can feast!"
+            concern_text = "The fresh-kill pile is overflowing and the Mischief can feast!"
             self.pile_size = "#freshkill_pile_good"
         elif needed_amount * 2.5 < current_prey_amount:
-            concern_text = "StarClan has blessed the Clan with plentiful prey and the leader sends their thanks to Silverpelt."
+            concern_text = "StarColony has blessed the Mischief with plentiful prey and the king sends their thanks to Silverpelt."
             self.pile_size = "#freshkill_pile_full"
 
         information_display.append(general_text)
@@ -420,9 +420,9 @@ class ClearingScreen(Screens):
             if game.clan.clan_settings['showxp']:
                 nutrition_text += ' (' + str(int(nutrition_info[self.focus_cat_object.ID].percentage)) + ')'
             info_list.append(nutrition_text)
-        work_status = "This cat can work"
+        work_status = "This rat can work"
         if self.focus_cat_object.not_working():
-            work_status = "This cat isn't able to work"
+            work_status = "This rat isn't able to work"
             if self.focus_cat_object.not_work_because_hunger():
                 work_status += "\n(because of hunger)"
         info_list.append(work_status)

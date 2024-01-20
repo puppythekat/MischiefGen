@@ -217,11 +217,11 @@ class MediationScreen(Screens):
             text = mediator.personality.trait + "\n" + mediator.experience_level
 
             if mediator.not_working():
-                text += "\nThis cat isn't able to work"
+                text += "\nThis rat isn't able to work"
                 self.mediate_button.disable()
                 self.sabotoge_button.disable()
             else:
-                text += "\nThis cat can work"
+                text += "\nThis rat can work"
                 self.mediate_button.enable()
                 self.sabotoge_button.enable()
 

@@ -68,7 +68,7 @@ def bs_blurb_text(cat):
     backstory_text = BACKSTORIES["backstories"][backstory]
     
     if cat.status in ['kittypet', 'loner', 'rogue', 'former Clancat']:
-            return f"This cat is a {cat.status} and currently resides outside of the Mischiefs."
+            return f"This rat is a {cat.status} and currently resides outside of the Mischiefs."
     
     return backstory_text
 
@@ -473,9 +473,9 @@ class ProfileScreen(Screens):
         if self.the_cat.dead:
             cat_name += " (dead)"  # A dead cat will have the (dead) sign next to their name
         if is_sc_instructor:
-            self.the_cat.thought = "Hello. I am here to guide the dead cats of " + game.clan.name + "Clan into StarClan."
+            self.the_cat.thought = "Hello. I am here to guide the dead rats of " + game.clan.name + "Mischief into StarColony."
         if is_df_instructor:
-            self.the_cat.thought = "Hello. I am here to drag the dead cats of " + game.clan.name + "Clan into the Dark Forest."
+            self.the_cat.thought = "Hello. I am here to drag the dead rats of " + game.clan.name + "Mischief into the Dark Forest."
 
 
         self.profile_elements["cat_name"] = pygame_gui.elements.UITextBox(cat_name,
@@ -597,7 +597,7 @@ class ProfileScreen(Screens):
                 (766, 220), (68, 68))),
                 "",
                 object_id="#leader_ceremony_button",
-                tool_tip_text="Leader Ceremony", manager=MANAGER
+                tool_tip_text="Crowning Ceremony", manager=MANAGER
             )
         elif self.the_cat.status in ["mediator", "mediator apprentice"]:
             self.profile_elements["mediation"] = UIImageButton(scale(pygame.Rect(
@@ -983,7 +983,7 @@ class ProfileScreen(Screens):
         """Opens the User Notes portion of the History Tab"""
         self.load_user_notes()
         if self.user_notes is None:
-            self.user_notes = 'Click the check mark to enter notes about your cat!'
+            self.user_notes = 'Click the check mark to enter notes about your rat!'
 
         self.notes_entry = pygame_gui.elements.UITextEntryBox(
             scale(pygame.Rect((200, 946), (1200, 298))),
@@ -1011,7 +1011,7 @@ class ProfileScreen(Screens):
         if not os.path.exists(notes_directory):
             os.makedirs(notes_directory)
 
-        if notes is None or notes == 'Click the check mark to enter notes about your cat!':
+        if notes is None or notes == 'Click the check mark to enter notes about your rat!':
             return
 
         new_notes = {str(self.the_cat.ID): notes}
@@ -1031,11 +1031,11 @@ class ProfileScreen(Screens):
         try:
             with open(notes_file_path, 'r') as read_file:
                 rel_data = ujson.loads(read_file.read())
-                self.user_notes = 'Click the check mark to enter notes about your cat!'
+                self.user_notes = 'Click the check mark to enter notes about your rat!'
                 if str(self.the_cat.ID) in rel_data:
                     self.user_notes = rel_data.get(str(self.the_cat.ID))
         except Exception as e:
-            print(f"ERROR: there was an error reading the Notes file of cat #{self.the_cat.ID}.\n", e)
+            print(f"ERROR: there was an error reading the Notes file of rat #{self.the_cat.ID}.\n", e)
 
     def toggle_history_sub_tab(self):
         """To toggle the history-sub-tab"""
@@ -1097,13 +1097,13 @@ class ProfileScreen(Screens):
         if self.the_cat.backstory:
             bs_blurb = BACKSTORIES["backstories"][self.the_cat.backstory]
         if self.the_cat.status in ['kittypet', 'loner', 'rogue', 'former Clancat']:
-            bs_blurb = f"This cat is a {self.the_cat.status} and currently resides outside of the Clans."
+            bs_blurb = f"This rat is a {self.the_cat.status} and currently resides outside of the Mischiefs."
 
         if bs_blurb is not None:
             adjust_text = str(bs_blurb).replace('This cat', str(self.the_cat.name))
             text = adjust_text
         else:
-            text = str(self.the_cat.name) + " was born into the Clan where {PRONOUN/m_c/subject} currently reside."
+            text = str(self.the_cat.name) + " was born into the Mischief where {PRONOUN/m_c/subject} currently reside."
 
         beginning = History.get_beginning(self.the_cat)
         if beginning:
@@ -1111,7 +1111,7 @@ class ProfileScreen(Screens):
                 text += " {PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} born on Moon " + str(
                     beginning['moon']) + " during " + str(beginning['birth_season']) + "."
             else:
-                text += " {PRONOUN/m_c/subject/CAP} joined the Clan on Moon " + str(
+                text += " {PRONOUN/m_c/subject/CAP} joined the Mischief on Moon " + str(
                     beginning['moon']) + " at the age of " + str(beginning['age']) + " Moons."
 
         text = process_text(text, cat_dict)
@@ -1147,7 +1147,7 @@ class ProfileScreen(Screens):
                 # the first event keeps the cat's name, consecutive events get to switch it up a bit
                 if i != 0:
                     sentence_beginners = [
-                        "This cat",
+                        "This rat",
                         "Then {PRONOUN/m_c/subject} {VERB/m_c/were/was}",
                         "{PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} also",
                         "Also, {PRONOUN/m_c/subject} {VERB/m_c/were/was}",
@@ -1155,7 +1155,7 @@ class ProfileScreen(Screens):
                         "{PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} then"
                     ]
                     chosen = choice(sentence_beginners)
-                    if chosen == 'This cat':
+                    if chosen == 'This rat':
                         new_text = new_text.replace(str(self.the_cat.name), chosen, 1)
                     else:
                         new_text = new_text.replace(f"{self.the_cat.name} was", f"{chosen}", 1)
@@ -1182,9 +1182,9 @@ class ProfileScreen(Screens):
         
         #First, just list the mentors:
         if self.the_cat.status in ['kitten', 'newborn']:
-                influence_history = 'This cat has not begun training.'
+                influence_history = 'This rat has not begun training.'
         elif self.the_cat.status in ['apprentice', 'medicine cat apprentice', 'mediator apprentice']:
-            influence_history = 'This cat has not finished training.'
+            influence_history = 'This rat has not finished training.'
         else:
             valid_formor_mentors = [Cat.fetch_cat(i) for i in self.the_cat.former_mentor if 
                                     isinstance(Cat.fetch_cat(i), Cat)]
@@ -1196,7 +1196,7 @@ class ProfileScreen(Screens):
                 else:
                     influence_history += str(valid_formor_mentors[0].name) + ". "
             else:
-                influence_history += "This cat either did not have a mentor, or {PRONOUN/m_c/poss} mentor is unknown. "
+                influence_history += "This rat either did not have a mentor, or {PRONOUN/m_c/poss} mentor is unknown. "
             
             # Second, do the facet/personality effect
             trait_influence = []
@@ -1363,8 +1363,8 @@ class ProfileScreen(Screens):
                     if index == death_number - 1 and self.the_cat.dead:
                         life_text = "lost {PRONOUN/m_c/poss} last remaining life"
                         # added code
-                        if "This cat was" in text:
-                            text = text.replace("This cat was", "{VERB/m_c/were/was}")
+                        if "This rat was" in text:
+                            text = text.replace("This rat was", "{VERB/m_c/were/was}")
                         else:
                             text = text[0].lower() + text[1:]
                     else:
@@ -1742,7 +1742,7 @@ class ProfileScreen(Screens):
                 scale(pygame.Rect((1156, 1044), (344, 72))),
                 "",
                 object_id="#destroy_accessory_button",
-                tool_tip_text="This will permanently remove this cat's current accessory",
+                tool_tip_text="This will permanently remove this rat's current accessory",
                 starting_height=2, manager=MANAGER
             )
 
@@ -1844,8 +1844,8 @@ class ProfileScreen(Screens):
                     self.exile_cat_button = UIImageButton(scale(pygame.Rect((1156, 900), (344, 92))),
                                                           "",
                                                           object_id=object_id,
-                                                          tool_tip_text='Changing where this cat resides will change '
-                                                                        'where your Clan goes after death. ',
+                                                          tool_tip_text='Changing where this rat resides will change '
+                                                                        'where your Mischief goes after death. ',
                                                           starting_height=2, manager=MANAGER)
                 else:
                     self.exile_cat_button = UIImageButton(scale(pygame.Rect((1156, 900), (344, 92))),

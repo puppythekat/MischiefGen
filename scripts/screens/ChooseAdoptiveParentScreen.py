@@ -146,7 +146,7 @@ class ChooseAdoptiveParentScreen(Screens):
         """Sets up the elements that are always on the page"""
         
         self.info = pygame_gui.elements.UITextBox(
-            "If a cat is added as an adoptive parent, they will be displayed on the family page and considered a full relative. "
+            "If a rat is added as an adoptive parent, they will be displayed on the family page and considered a full relative. "
             "Adoptive and blood parents will be treated the same; this also applies to siblings. ",
             scale(pygame.Rect((400, 120), (800, 200))),
             object_id=get_text_box_theme("#text_box_22_horizcenter_spacing_95")
@@ -156,10 +156,10 @@ class ChooseAdoptiveParentScreen(Screens):
                 (1450, 140), (68, 68))),
                 "",
                 object_id="#help_button", manager=MANAGER,
-                tool_tip_text=  "A cat's adoptive parents are set automatically when the cat is born. "
-                                "Any cats that are mates with the parents at the time of birth are considered adoptive parents."
+                tool_tip_text=  "A rat's adoptive parents are set automatically when the rat is born. "
+                                "Any rats that are mates with the parents at the time of birth are considered adoptive parents."
                                 "<br><br>"
-                                "To be a possible adoptive parent, the cat has to be 14 moons older than the child.",
+                                "To be a possible adoptive parent, the rat has to be 14 moons older than the child.",
             )
 
         self.the_cat_frame = pygame_gui.elements.UIImage(scale(pygame.Rect((80, 226), (532, 394))),
@@ -558,7 +558,7 @@ class ChooseAdoptiveParentScreen(Screens):
             name,
             object_id="#text_box_34_horizcenter")
 
-        info = str(self.the_cat.moons) + " moons\n" + self.the_cat.status + "\n" + self.the_cat.genderalign + "\n" + \
+        info = str(self.the_cat.moons) + " moons\n" + self.the_cat.status.replace('cat', 'rat').replace('warrior', 'scavenger').replace('leader', 'king').replace('newborn', 'pinkie').replace('kittypet','fancyrat').replace('Clan','Mischief') + "\n" + self.the_cat.genderalign + "\n" + \
                self.the_cat.personality.trait
         self.current_cat_elements["info"] = pygame_gui.elements.UITextBox(info,
                                                                           scale(pygame.Rect((1000, 350), (188, 200))),
@@ -692,7 +692,7 @@ class ChooseAdoptiveParentScreen(Screens):
             name,
             object_id="#text_box_34_horizcenter")
 
-        info = str(self.selected_cat.moons) + " moons\n" + self.selected_cat.status + "\n" + \
+        info = str(self.selected_cat.moons) + " moons\n" + self.selected_cat.status.replace('cat', 'rat').replace('warrior', 'scavenger').replace('leader', 'king').replace('newborn', 'pinkie').replace('kittypet','fancyrat').replace('Clan','Mischief') + "\n" + \
                self.selected_cat.genderalign + "\n" + self.selected_cat.personality.trait
         self.selected_cat_elements["info"] = pygame_gui.elements.UITextBox(info,
                                                                    scale(pygame.Rect((412, 350), (188, 200))),

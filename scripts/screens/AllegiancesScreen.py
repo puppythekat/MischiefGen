@@ -22,7 +22,7 @@ class AllegiancesScreen(Screens):
 
     def screen_switches(self):
         # Heading
-        self.heading = pygame_gui.elements.UITextBox(f'{game.clan.name}Clan Allegiances',
+        self.heading = pygame_gui.elements.UITextBox(f'{game.clan.name}Mischief Allegiances',
                                                      scale(pygame.Rect((390, 230), (800, 80))),
                                                      object_id=get_text_box_theme("#text_box_34_horizcenter")
                                                      , manager=MANAGER)
@@ -30,7 +30,7 @@ class AllegiancesScreen(Screens):
         # Set Menu Buttons.
         self.show_menu_buttons()
         self.set_disabled_menu_buttons(["allegiances"])
-        self.update_heading_text(f'{game.clan.name}Clan')
+        self.update_heading_text(f'{game.clan.name}Mischief')
         allegiance_list = self.get_allegiances_text()
 
 
@@ -71,7 +71,7 @@ class AllegiancesScreen(Screens):
         del self.heading
     
     def generate_one_entry(self, cat, extra_details = ""):
-            """ Extra Details will be placed after the cat description, but before the apprentice (if they have one. )"""
+            """ Extra Details will be placed after the rat description, but before the apprentice (if they have one. )"""
             output = f"{str(cat.name).upper()} - {cat.describe_cat()} {extra_details}"
 
             if len(cat.apprentice) > 0:
@@ -125,7 +125,7 @@ class AllegiancesScreen(Screens):
         outputs = []
         if game.clan.leader and not (game.clan.leader.dead or game.clan.leader.outside):
                 outputs.append([
-                    '<b><u>LEADER</u></b>',
+                    '<b><u>KING</u></b>',
                     self.generate_one_entry(game.clan.leader)
                 ])
 
@@ -140,9 +140,9 @@ class AllegiancesScreen(Screens):
         if living_meds:
             _box = ["", ""]
             if len(living_meds) == 1:
-                _box[0] = '<b><u>MEDICINE CAT</u></b>'
+                _box[0] = '<b><u>MEDICINE RAT</u></b>'
             else:
-                _box[0] = '<b><u>MEDICINE CATS</u></b>'
+                _box[0] = '<b><u>MEDICINE RATS</u></b>'
             
             _box[1] = "\n".join([self.generate_one_entry(i) for i in living_meds])
             outputs.append(_box)
@@ -162,9 +162,9 @@ class AllegiancesScreen(Screens):
         if living_warriors:
             _box = ["", ""]
             if len(living_warriors) == 1:
-                _box[0] = '<b><u>WARRIOR</u></b>'
+                _box[0] = '<b><u>SCAVENGER</u></b>'
             else:
-                _box[0] = '<b><u>WARRIORS</u></b>'
+                _box[0] = '<b><u>SCAVENGERS</u></b>'
             
             _box[1] = "\n".join([self.generate_one_entry(i) for i in living_warriors])
             outputs.append(_box)
@@ -183,7 +183,7 @@ class AllegiancesScreen(Screens):
          # Queens and Kits Box:
         if queen_dict or living_kits:
             _box = ["", ""]
-            _box[0] = '<b><u>QUEENS AND KITS</u></b>'
+            _box[0] = '<b><u>QUEENS & PINKIES</u></b>'
             
             # This one is a bit different.  First all the queens, and the kits they are caring for. 
             all_entries = []
@@ -332,11 +332,11 @@ class MedDenScreen(Screens):
                 (1450, 50), (68, 68))),
                 "",
                 object_id="#help_button", manager=MANAGER,
-                tool_tip_text="Your medicine cats will gather herbs over each timeskip and during any patrols you send "
-                              "them on. You can see what was gathered in the Log below! Your medicine cats will give"
-                              " these to any hurt or sick cats that need them, helping those cats to heal quicker."
+                tool_tip_text="Your medicine rats will gather herbs over each timeskip and during any patrols you send "
+                              "them on. You can see what was gathered in the Log below! Your medicine rats will give"
+                              " these to any hurt or sick rats that need them, helping those rats to heal quicker."
                               "<br><br>"
-                              "Hover your mouse over the medicine den image to see what herbs your Clan has!",
+                              "Hover your mouse over the medicine den image to see what herbs your Mischief has!",
 
             )
             self.last_page = UIImageButton(scale(pygame.Rect((660, 1272), (68, 68))), "", object_id="#arrow_left_button"
@@ -471,13 +471,13 @@ class MedDenScreen(Screens):
             number = medical_cats_condition_fulfilled(Cat.all_cats.values(), amount_per_med,
                                                       give_clanmembers_covered=True)
             if len(self.meds) == 1:
-                insert = 'medicine cat'
+                insert = 'medicine rat'
             else:
-                insert = 'medicine cats'
-            meds_cover = f"Your {insert} can care for a Clan of up to {number} members, including themselves."
+                insert = 'medicine rats'
+            meds_cover = f"Your {insert} can care for a Mischief of up to {number} members, including themselves."
 
             if len(self.meds) >= 1 and number == 0:
-                meds_cover = f"You have no medicine cats who are able to work. Your Clan will be at a higher risk of death and disease."
+                meds_cover = f"You have no medicine rats who are able to work. Your Mischief will be at a higher risk of death and disease."
 
             herb_amount = sum(game.clan.herbs.values())
             med_concern = f"This should not appear."
@@ -485,33 +485,33 @@ class MedDenScreen(Screens):
                 med_concern = f"The herb stores are empty and bare, this does not bode well."
             elif 0 < herb_amount <= 8:
                 if len(self.meds) == 1:
-                    med_concern = f"The medicine cat worries over the herb stores, they don't have nearly enough for the Clan."
+                    med_concern = f"The medicine rat worries over the herb stores, they don't have nearly enough for the Mischief."
                 else:
-                    med_concern = f"The medicine cats worry over the herb stores, they don't have nearly enough for the Clan."
+                    med_concern = f"The medicine rats worry over the herb stores, they don't have nearly enough for the Mischief."
             elif 8 < herb_amount <= 20:
                 med_concern = f"The herb stores are small, but it's enough for now."
             elif 20 < herb_amount <= 30:
                 if len(self.meds) == 1:
-                    med_concern = f"The medicine cat is content with how many herbs they have stocked up."
+                    med_concern = f"The medicine rat is content with how many herbs they have stocked up."
                 else:
-                    med_concern = f"The medicine cats are content with how many herbs they have stocked up."
+                    med_concern = f"The medicine rats are content with how many herbs they have stocked up."
             elif 30 < herb_amount <= 50:
                 if len(self.meds) == 1:
-                    med_concern = f"The herb stores are overflowing and the medicine cat has little worry."
+                    med_concern = f"The herb stores are overflowing and the medicine rat has little worry."
                 else:
-                    med_concern = f"The herb stores are overflowing and the medicine cats have little worry."
+                    med_concern = f"The herb stores are overflowing and the medicine rats have little worry."
             elif 50 < herb_amount:
                 if len(self.meds) == 1:
-                    med_concern = f"StarClan has blessed them with plentiful herbs and the medicine cat sends their thanks to Silverpelt."
+                    med_concern = f"StarColony has blessed them with plentiful herbs and the medicine rat sends their thanks to Silverpelt."
                 else:
-                    med_concern = f"StarClan has blessed them with plentiful herbs and the medicine cats send their thanks to Silverpelt."
+                    med_concern = f"StarColony has blessed them with plentiful herbs and the medicine rats send their thanks to Silverpelt."
 
             med_messages.append(meds_cover)
             med_messages.append(med_concern)
             self.meds_messages.set_text("<br>".join(med_messages))
 
         else:
-            meds_cover = f"You have no medicine cats, your clan will be at higher risk of death and sickness."
+            meds_cover = f"You have no medicine rats, your Mischief will be at higher risk of death and sickness."
             self.meds_messages.set_text(meds_cover)
 
     def handle_tab_toggles(self):
@@ -613,9 +613,9 @@ class MedDenScreen(Screens):
             if cat.not_working():
                 med_working = False
             if med_working is True:
-                work_status = "This cat can work"
+                work_status = "This rat can work"
             else:
-                work_status = "This cat isn't able to work"
+                work_status = "This rat isn't able to work"
             info_list = [med_skill, med_exp, work_status]
             self.med_info.set_text("<br>".join(info_list))
 

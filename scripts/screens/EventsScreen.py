@@ -21,7 +21,7 @@ class EventsScreen(Screens):
     health_events = ""
     other_clans_events = ""
     misc_events = ""
-    display_text = "<center>See which events are currently happening in the Clan.</center>"
+    display_text = "<center>See which events are currently happening in the Mischief.</center>"
     display_events = ""
 
     def __init__(self, name=None):
@@ -249,7 +249,7 @@ class EventsScreen(Screens):
             self.freshkill_pile_button =  UIImageButton(scale(pygame.Rect((1270, 210), (282, 60))), "", object_id="#freshkill_pile_button"
                                              , manager=MANAGER)
 
-        self.heading = pygame_gui.elements.UITextBox("See which events are currently happening in the Clan.",
+        self.heading = pygame_gui.elements.UITextBox("See which events are currently happening in the Mischief.",
                                                      scale(pygame.Rect((200, 220), (1200, 80))),
                                                      object_id=get_text_box_theme("#text_box_30_horizcenter"),
                                                      manager=MANAGER)
@@ -268,9 +268,9 @@ class EventsScreen(Screens):
         self.events_frame.disable()
         # Set text for Clan age
         if game.clan.age == 1:
-            self.clan_age.set_text(f'Clan age: {game.clan.age} moon')
+            self.clan_age.set_text(f'Mischief age: {game.clan.age} moon')
         if game.clan.age != 1:
-            self.clan_age.set_text(f'Clan age: {game.clan.age} moons')
+            self.clan_age.set_text(f'Mischief age: {game.clan.age} moons')
 
         self.timeskip_button = UIImageButton(scale(pygame.Rect((620, 436), (360, 60))), "", object_id="#timeskip_button"
                                              , manager=MANAGER)
@@ -344,7 +344,7 @@ class EventsScreen(Screens):
 
         # Draw and disable the correct menu buttons.
         self.set_disabled_menu_buttons(["events_screen"])
-        self.update_heading_text(f'{game.clan.name}Clan')
+        self.update_heading_text(f'{game.clan.name}Mischief')
         self.show_menu_buttons()
         self.update_events_display()
 
@@ -536,9 +536,9 @@ class EventsScreen(Screens):
 
         self.season.set_text(f'Current season: {game.clan.current_season}')
         if game.clan.age == 1:
-            self.clan_age.set_text(f'Clan age: {game.clan.age} moon')
+            self.clan_age.set_text(f'Mischief age: {game.clan.age} moon')
         if game.clan.age != 1:
-            self.clan_age.set_text(f'Clan age: {game.clan.age} moons')
+            self.clan_age.set_text(f'Mischief age: {game.clan.age} moons')
 
         for ele in self.display_events_elements:
             self.display_events_elements[ele].kill()
