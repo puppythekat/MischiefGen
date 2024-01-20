@@ -432,7 +432,7 @@ class Cat():
                 game.clan.leader_lives = 0
                 self.thought = 'Is surprised to find themselves walking the stars of Silverpelt'
                 if game.clan.instructor.df is False:
-                    text = 'They\'ve lost their last life and have travelled to StarClan.'
+                    text = 'They\'ve lost their last life and have travelled to StarColony.'
                 else:
                     text = 'They\'ve lost their last life and have travelled to the Dark Forest.'
         else:

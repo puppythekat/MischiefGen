@@ -115,8 +115,8 @@ class Sprites():
             'bengalcolours', 'marbledcolours', 'rosettecolours', 'smokecolours', 'tickedcolours', 
             'mackerelcolours', 'classiccolours', 'sokokecolours', 'agouticolours', 'singlestripecolours',
             'maskedcolours', 
-            'shadersnewwhite', 'lineartdead', 'tortiepatchesmasks', 
-            'medcatherbs', 'lineartdf', 'lightingnew', 'fademask',
+            'shadersnewwhite', 'lineartdead', 'lineartdeaddumbo', 'lineartdeadtop', 'lineartdumbo', 'linearttop', 'top','dumbo','tortiepatchesmasks', 
+            'tortiepatchesmaskstwo','medcatherbs', 'lineartdf', 'lightingnew', 'fademask',
             'fadestarclan', 'fadedarkforest'
 
         ]:
@@ -127,10 +127,14 @@ class Sprites():
 
         # Line art
         self.make_group('lineart', (0, 0), 'lines')
+        self.make_group('lineartdumbo', (0, 0), 'linesdumbo')
+        self.make_group('linearttop', (0, 0), 'linestop')
         self.make_group('shadersnewwhite', (0, 0), 'shaders')
         self.make_group('lightingnew', (0, 0), 'lighting')
 
         self.make_group('lineartdead', (0, 0), 'lineartdead')
+        self.make_group('lineartdeaddumbo', (0, 0), 'lineartdeaddumbo')
+        self.make_group('lineartdeadtop', (0, 0), 'lineartdeadtop')
         self.make_group('lineartdf', (0, 0), 'lineartdf')
 
         # Fading Fog
@@ -296,6 +300,40 @@ class Sprites():
             self.make_group('tortiepatchesmasks', (a, 3), f"tortiemask{i}")
         for a, i in enumerate(['SHILOH', 'FRECKLED', 'HEARTBEAT']):
             self.make_group('tortiepatchesmasks', (a, 4), f"tortiemask{i}")
+        for a, i in enumerate(['WHITE', 'ANY', 'TUXEDO', 'LITTLE', 'COLOURPOINT', 'VAN', 'ANYTWO',
+            'MOON', 'PHANTOM', 'POWDER', 'BLEACHED', 'SAVANNAH', 'FADESPOTS', 'PEBBLESHINE']):
+            self.make_group('tortiepatchesmaskstwo', (a, 0), f'tortiemask{i}')
+        for a, i in enumerate(['EXTRA', 'ONEEAR', 'BROKEN', 'LIGHTTUXEDO', 'BUZZARDFANG', 'RAGDOLL', 
+            'LIGHTSONG', 'VITILIGO', 'BLACKSTAR', 'PIEBALD', 'CURVED', 'PETAL', 'SHIBAINU', 'OWL']):
+            self.make_group('tortiepatchesmaskstwo', (a, 1), f'tortiemask{i}')
+        # ryos white patches
+        for a, i in enumerate(['TIP', 'FANCY', 'FRECKLES', 'RINGTAIL', 'HALFFACE', 'PANTSTWO', 'GOATEE', 'VITILIGOTWO',
+            'PAWS', 'MITAINE', 'BROKENBLAZE', 'SCOURGE', 'DIVA', 'BEARD']):
+            self.make_group('tortiepatchesmaskstwo', (a, 2), f'tortiemask{i}')
+        for a, i in enumerate(['TAIL', 'BLAZE', 'PRINCE', 'BIB', 'VEE', 'UNDERS', 'HONEY',
+            'FAROFA', 'DAMIEN', 'MISTER', 'BELLY', 'TAILTIP', 'TOES', 'TOPCOVER']):
+            self.make_group('whitepatches', (a, 3), f'tortiemask{i}')
+        for a, i in enumerate(
+                ['APRON', 'CAPSADDLE', 'MASKMANTLE', 'SQUEAKS', 'STAR', 'TOESTAIL', 'RAVENPAW',
+                'PANTS', 'REVERSEPANTS', 'SKUNK', 'KARPATI', 'HALFWHITE', 'APPALOOSA', 'DAPPLEPAW']):
+            self.make_group('tortiepatchesmaskstwo', (a, 4), f'tortiemask{i}')
+        # beejeans white patches + perrio's point marks, painted, and heart2 + anju's new marks + key's blackstar
+        for a, i in enumerate(['HEART', 'LILTWO', 'GLASS', 'MOORISH', 'SEPIAPOINT', 'MINKPOINT', 'SEALPOINT',
+            'MAO', 'LUNA', 'CHESTSPECK', 'WINGS', 'PAINTED', 'HEARTTWO', 'WOODPECKER']):
+            self.make_group('tortiepatchesmaskstwo', (a, 5), f'tortiemask{i}')
+        # acorn's white patches + ryos' bub + fable lovebug + frankie trixie
+        for a, i in enumerate(['BOOTS', 'MISS', 'COW', 'COWTWO', 'BUB', 'BOWTIE', 'MUSTACHE', 'REVERSEHEART',
+            'SPARROW', 'VEST', 'LOVEBUG', 'TRIXIE', 'SAMMY', 'SPARKLE']):
+            self.make_group('tortiepatchesmaskstwo', (a, 6), f'tortiemask{i}')
+        # acorn's white patches: the sequel
+        for a, i in enumerate(['RIGHTEAR', 'LEFTEAR', 'ESTRELLA', 'SHOOTINGSTAR', 'EYESPOT', 'REVERSEEYE',
+            'FADEBELLY', 'FRONT', 'BLOSSOMSTEP', 'PEBBLE', 'TAILTWO', 'BUDDY', 'BACKSPOT', 'EYEBAGS']):
+            self.make_group('tortiepatchesmaskstwo', (a, 7), f'tortiemask{i}')
+        for a, i in enumerate(['BULLSEYE', 'FINN', 'DIGIT', 'KROPKA', 'FCTWO', 'FCONE', 'MIA', 'SCAR',
+            'BUSTER', 'SMOKEY', 'HAWKBLAZE', 'CAKE', 'ROSINA', 'PRINCESS']):
+            self.make_group('tortiepatchesmaskstwo', (a, 8), f'tortiemask{i}')
+        for a, i in enumerate(['LOCKET']):
+            self.make_group('tortiepatchesmaskstwo', (a, 9), 'tortiemask' + i)
 
         # SKINS
         for a, i in enumerate(['BLACK', "RED", 'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN']):
@@ -304,6 +342,21 @@ class Sprites():
             self.make_group('skin', (a, 1), f"skin{i}")
         for a, i in enumerate(['DARKMARBLED', 'MARBLED', 'LIGHTMARBLED', 'DARKBLUE', 'BLUE', 'LIGHTBLUE']):
             self.make_group('skin', (a, 2), f"skin{i}")
+            
+        for a, i in enumerate(['BLACK', "RED", 'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN']):
+            self.make_group('top', (a, 0), f"top{i}")
+        for a, i in enumerate(['DARK', 'DARKGREY', 'GREY', 'DARKSALMON', 'SALMON', 'PEACH']):
+            self.make_group('top', (a, 1), f"top{i}")
+        for a, i in enumerate(['DARKMARBLED', 'MARBLED', 'LIGHTMARBLED', 'DARKBLUE', 'BLUE', 'LIGHTBLUE']):
+            self.make_group('top', (a, 2), f"top{i}")
+            
+        for a, i in enumerate(['BLACK', "RED", 'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN']):
+            self.make_group('dumbo', (a, 0), f"dumbo{i}")
+        for a, i in enumerate(['DARK', 'DARKGREY', 'GREY', 'DARKSALMON', 'SALMON', 'PEACH']):
+            self.make_group('dumbo', (a, 1), f"dumbo{i}")
+        for a, i in enumerate(['DARKMARBLED', 'MARBLED', 'LIGHTMARBLED', 'DARKBLUE', 'BLUE', 'LIGHTBLUE']):
+            self.make_group('dumbo', (a, 2), f"dumbo{i}")
+            
 
         self.load_scars()
 

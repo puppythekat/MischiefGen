@@ -35,6 +35,9 @@ class Pelt():
         'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
         'CHOCOLATE'
     ]
+    pelt_type = [
+        'SHORT', 'REX', 'DREX', 'HARLEY'
+    ]
     pelt_c_no_white = [
         'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST', 'BLACK', 'CREAM', 'PALEGINGER',
         'GOLDEN', 'GINGER', 'DARKGINGER', 'SIENNA', 'LIGHTBROWN', 'LILAC', 'BROWN', 'GOLDEN-BROWN', 'DARKBROWN',
@@ -49,7 +52,16 @@ class Pelt():
     tortiepatterns = ['ONE', 'TWO', 'THREE', 'FOUR', 'REDTAIL', 'DELILAH', 'MINIMALONE', 'MINIMALTWO', 'MINIMALTHREE', 'MINIMALFOUR', 'HALF',
                     'OREO', 'SWOOP', 'MOTTLED', 'SIDEMASK', 'EYEDOT', 'BANDANA', 'PACMAN', 'STREAMSTRIKE', 'ORIOLE', 'CHIMERA', 'DAUB', 'EMBER', 'BLANKET',
                     'ROBIN', 'BRINDLE', 'PAIGE', 'ROSETAIL', 'SAFI', 'SMUDGED', 'DAPPLENIGHT', 'STREAK', 'MASK', 'CHEST', 'ARMTAIL', 'SMOKE', 'GRUMPYFACE',
-                    'BRIE', 'BELOVED', 'BODY', 'SHILOH', 'FRECKLED', 'HEARTBEAT']
+                    'BRIE', 'BELOVED', 'BODY', 'SHILOH', 'FRECKLED', 'HEARTBEAT', 'LITTLE', 'LIGHTTUXEDO', 'BUZZARDFANG', 'TIP', 'BLAZE', 'BIB', 'VEE', 'PAWS',
+                    'BELLY', 'TAILTIP', 'TOES', 'BROKENBLAZE', 'LILTWO', 'SCOURGE', 'TOESTAIL', 'RAVENPAW', 'HONEY', 'LUNA',
+                    'EXTRA', 'MUSTACHE', 'REVERSEHEART', 'SPARKLE', 'RIGHTEAR', 'LEFTEAR', 'ESTRELLA', 'REVERSEEYE', 'BACKSPOT',
+                    'EYEBAGS', 'LOCKET', 'TUXEDO', 'FANCY', 'UNDERS', 'DAMIEN', 'SKUNK', 'MITAINE', 'SQUEAKS', 'STAR', 'WINGS',
+                    'DIVA', 'SAVANNAH', 'FADESPOTS', 'BEARD', 'DAPPLEPAW', 'TOPCOVER', 'WOODPECKER', 'MISS', 'BOWTIE', 'VEST','FADEBELLY', 'DIGIT', 'FCTWO', 'FCONE', 'MIA', 'ROSINA', 'PRINCESS', 'ANY', 'ANYTWO', 'BROKEN', 'FRECKLES', 'RINGTAIL', 'HALFFACE', 'PANTSTWO',
+                'GOATEE', 'PRINCE', 'FAROFA', 'MISTER', 'PANTS', 'REVERSEPANTS', 'HALFWHITE', 'APPALOOSA', 'PIEBALD',
+                'CURVED', 'GLASS', 'MASKMANTLE', 'MAO', 'PAINTED', 'SHIBAINU', 'OWL', 'BUB', 'SPARROW', 'TRIXIE',
+                'SAMMY', 'FRONT', 'BLOSSOMSTEP', 'BULLSEYE', 'FINN', 'SCAR', 'BUSTER', 'HAWKBLAZE', 'CAKE', 'VAN', 'ONEEAR', 'LIGHTSONG', 'TAIL', 'HEART', 'MOORISH', 'APRON', 'CAPSADDLE',
+                    'CHESTSPECK', 'BLACKSTAR', 'PETAL', 'HEARTTWO','PEBBLESHINE', 'BOOTS', 'COW', 'COWTWO', 'LOVEBUG',
+                    'SHOOTINGSTAR', 'EYESPOT', 'PEBBLE', 'TAILTWO', 'BUDDY', 'KROPKA', 'COLOURPOINT', 'RAGDOLL', 'SEPIAPOINT', 'MINKPOINT', 'SEALPOINT', 'WHITE', 'VITILIGO', 'VITILIGOTWO', 'MOON', 'PHANTOM', 'KARPATI', 'POWDER', 'BLEACHED', 'SMOKEY']
     tortiebases = ['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled', 'mackerel',
                 'classic', 'sokoke', 'agouti', 'singlestripe', 'masked']
 
@@ -133,11 +145,18 @@ class Pelt():
 
     skin_sprites = ['BLACK',  'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN', 'DARK', 'DARKGREY', 'GREY', 'DARKSALMON',
                     'SALMON', 'PEACH', 'DARKMARBLED', 'MARBLED', 'LIGHTMARBLED', 'DARKBLUE', 'BLUE', 'LIGHTBLUE', 'RED']
+    
+    top_sprites = ['BLACK',  'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN', 'DARK', 'DARKGREY', 'GREY', 'DARKSALMON',
+                    'SALMON', 'PEACH', 'DARKMARBLED', 'MARBLED', 'LIGHTMARBLED', 'DARKBLUE', 'BLUE', 'LIGHTBLUE', 'RED']
+    
+    dumbo_sprites = ['BLACK',  'PINK', 'DARKBROWN', 'BROWN', 'LIGHTBROWN', 'DARK', 'DARKGREY', 'GREY', 'DARKSALMON',
+                    'SALMON', 'PEACH', 'DARKMARBLED', 'MARBLED', 'LIGHTMARBLED', 'DARKBLUE', 'BLUE', 'LIGHTBLUE', 'RED']
 
     """Holds all appearence information for a cat. """
     def __init__(self,
                  name:str="SingleColour",
                  length:str="short",
+                 fur_type:str="short",
                  colour:str="WHITE",
                  white_patches:str=None,
                  eye_color:str="BLUE",
@@ -154,6 +173,8 @@ class Pelt():
                  scars:list=None,
                  tint:str="none",
                  skin:str="BLACK",
+                 top:str="BLACK",
+                 dumbo:str="BLACK",
                  white_patches_tint:str="none",
                  kitten_sprite:int=None,
                  adol_sprite:int=None,
@@ -161,6 +182,7 @@ class Pelt():
                  senior_sprite:int=None,
                  para_adult_sprite:int=None,
                  reverse:bool=False,
+                 topear:bool=False,
                  ) -> None:
         self.name = name
         self.colour = colour
@@ -173,6 +195,7 @@ class Pelt():
         self.tortiecolour = tortiecolour
         self.vitiligo = vitiligo
         self.length=length
+        self.fur_type=fur_type
         self.points = points
         self.accessory = accessory
         self.paralyzed = paralyzed
@@ -189,13 +212,15 @@ class Pelt():
             "senior": senior_sprite if senior_sprite is not None else 0,
             "para_adult": para_adult_sprite if para_adult_sprite is not None else 0,
         }        
-        self.cat_sprites['newborn'] = 20
-        self.cat_sprites['para_young'] = 17
-        self.cat_sprites["sick_adult"] = 18
-        self.cat_sprites["sick_young"] = 19
+        self.cat_sprites['newborn'] = 1
+        self.cat_sprites["sick_adult"] = 2
+        self.cat_sprites["sick_young"] = 3
         
         self.reverse = reverse
+        self.topear = topear
         self.skin = skin
+        self.top = self.skin
+        self.dumbo = self.skin
 
     @staticmethod
     def generate_new_pelt(gender:str, parents:tuple=(), age:str="adult"):
@@ -263,25 +288,25 @@ class Pelt():
             self.eye_colour = "BLUE"
         
         if self.length == 'long':
-            if self.cat_sprites['adult'] not in [9, 10, 11]:
+            if self.cat_sprites['adult'] not in [10, 11, 12]:
                 if self.cat_sprites['adult'] == 0:
-                    self.cat_sprites['adult'] = 9
-                elif self.cat_sprites['adult'] == 1:
                     self.cat_sprites['adult'] = 10
-                elif self.cat_sprites['adult'] == 2:
+                elif self.cat_sprites['adult'] == 1:
                     self.cat_sprites['adult'] = 11
+                elif self.cat_sprites['adult'] == 2:
+                    self.cat_sprites['adult'] = 12
                 self.cat_sprites['young adult'] = self.cat_sprites['adult']
                 self.cat_sprites['senior adult'] = self.cat_sprites['adult']
-                self.cat_sprites['para_adult'] = 16
+                self.cat_sprites['para_adult'] = 21
         else:
-            self.cat_sprites['para_adult'] = 15
-        if self.cat_sprites['senior'] not in [12, 13, 14]:
+            self.cat_sprites['para_adult'] = 18
+        if self.cat_sprites['senior'] not in [13, 14, 15]:
             if self.cat_sprites['senior'] == 3:
-                self.cat_sprites['senior'] = 12
-            elif self.cat_sprites['senior'] == 4:
                 self.cat_sprites['senior'] = 13
-            elif self.cat_sprites['senior'] == 5:
+            elif self.cat_sprites['senior'] == 4:
                 self.cat_sprites['senior'] = 14
+            elif self.cat_sprites['senior'] == 5:
+                self.cat_sprites['senior'] = 15
         
         if self.pattern in convert_dict["old_tortie_patches"]:
             old_pattern = self.pattern
@@ -612,23 +637,25 @@ class Pelt():
 
     def init_sprite(self):
         self.cat_sprites = {
-            'newborn': 20,
-            'kitten': random.randint(0, 2),
-            'adolescent': random.randint(3, 5),
+            'newborn': 0,
+            'kitten': random.randint(3, 5),
+            'adolescent': random.randint(6, 8),
             'senior': random.randint(12, 14),
-            'sick_young': 19,
-            'sick_adult': 18
+            'sick_young': 1,
+            'sick_adult': 1
         }
         self.reverse = choice([True, False])
+        self.topear = choice([True, False])
         # skin chances
         self.skin = choice(Pelt.skin_sprites)
+        self.top = self.skin
+        self.dumbo = self.skin
+        
                 
         if self.length != 'long':
-            self.cat_sprites['adult'] = random.randint(6, 8)
-            self.cat_sprites['para_adult'] = 16
+            self.cat_sprites['adult'] = random.randint(9, 11)
         else:
             self.cat_sprites['adult'] = random.randint(9, 11)
-            self.cat_sprites['para_adult'] = 15
         self.cat_sprites['young adult'] = self.cat_sprites['adult']
         self.cat_sprites['senior adult'] = self.cat_sprites['adult']
 
@@ -1078,3 +1105,5 @@ class Pelt():
     
     def get_sprites_name(self):
         return Pelt.sprites_names[self.name]
+
+

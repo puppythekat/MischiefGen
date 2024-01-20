@@ -248,7 +248,7 @@ class StartScreen(Screens):
         self.update_button.visible = 0
 
         try:
-            global has_checked_for_update
+            global has_checked_for_update6
             global update_available
             if not get_version_info().is_source_build and not get_version_info().is_itch and get_version_info().upstream.lower() == "ClanGenOfficial/clangen".lower() and \
                     game.settings['check_for_updates'] and not has_checked_for_update:

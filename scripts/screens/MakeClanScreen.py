@@ -32,10 +32,10 @@ class MakeClanScreen(Screens):
     bg_preview_border = pygame.transform.scale(
         pygame.image.load("resources/images/bg_preview_border.png").convert_alpha(), (466, 416))
 
-    classic_mode_text = "This mode is Clan Generator at it's most basic. " \
-                        "The player will not be expected to manage the minutia of Clan life. <br><br>" \
+    classic_mode_text = "This mode is Mischief Generator at it's most basic. " \
+                        "The player will not be expected to manage the minutia of Mischief life. <br><br>" \
                         "Perfect for a relaxing game session or for focusing on storytelling. <br><br>" \
-                        "With this mode you are the eye in the sky, watching the Clan as their story unfolds. "
+                        "With this mode you are the eye in the sky, watching the Mischief as their story unfolds. "
 
     expanded_mode_text = "A more hands-on experience. " \
                          "This mode has everything in Classic Mode as well as more management-focused features.<br><br>" \
@@ -43,7 +43,7 @@ class MakeClanScreen(Screens):
                          "- Illnesses, Injuries, and Permanent Conditions<br>" \
                          "- Herb gathering and treatment<br>" \
                          "- Ability to choose patrol type<br><br>" \
-                         "With this mode you'll be making the important Clan-life decisions."
+                         "With this mode you'll be making the important Mischief-life decisions."
 
     cruel_mode_text = "This mode has all the features of Expanded mode, but is significantly more difficult. If " \
                       "you'd like a challenge with a bit of brutality, then this mode is for you.<br><br>" \
@@ -96,7 +96,7 @@ class MakeClanScreen(Screens):
 
         # Buttons that appear on every screen.
         self.menu_warning = pygame_gui.elements.UITextBox(
-            'Note: going back to main menu resets the generated cats.',
+            'Note: going back to main menu resets the generated rats.',
             scale(pygame.Rect((50, 50), (1200, -1))),
             object_id=get_text_box_theme("#text_box_22_horizleft"), manager=MANAGER
         )
@@ -183,11 +183,11 @@ class MakeClanScreen(Screens):
         elif event.ui_element == self.elements['next_step']:
             new_name = sub(r'[^A-Za-z0-9 ]+', "", self.elements["name_entry"].get_text()).strip()
             if not new_name:
-                self.elements["error"].set_text("Your Clan's name cannot be empty")
+                self.elements["error"].set_text("Your Mischief's name cannot be empty")
                 self.elements["error"].show()
                 return
             if new_name.casefold() in [clan.casefold() for clan in game.switches['clan_list']]:
-                self.elements["error"].set_text("A Clan with that name already exists.")
+                self.elements["error"].set_text("A Mischief with that name already exists.")
                 self.elements["error"].show()
                 return
             self.clan_name = new_name
@@ -207,11 +207,11 @@ class MakeClanScreen(Screens):
             if not self.elements['name_entry'].is_focused:
                 new_name = sub(r'[^A-Za-z0-9 ]+', "", self.elements["name_entry"].get_text()).strip()
                 if not new_name:
-                    self.elements["error"].set_text("Your Clan's name cannot be empty")
+                    self.elements["error"].set_text("Your Mischief's name cannot be empty")
                     self.elements["error"].show()
                     return
                 if new_name.casefold() in [clan.casefold() for clan in game.switches['clan_list']]:
-                    self.elements["error"].set_text("A Clan with that name already exists.")
+                    self.elements["error"].set_text("A Mischief with that name already exists.")
                     self.elements["error"].show()
                     return
                 self.clan_name = new_name
@@ -219,11 +219,11 @@ class MakeClanScreen(Screens):
         elif event.key == pygame.K_RETURN:
             new_name = sub(r'[^A-Za-z0-9 ]+', "", self.elements["name_entry"].get_text()).strip()
             if not new_name:
-                self.elements["error"].set_text("Your Clan's name cannot be empty")
+                self.elements["error"].set_text("Your Mischief's name cannot be empty")
                 self.elements["error"].show()
                 return
             if new_name.casefold() in [clan.casefold() for clan in game.switches['clan_list']]:
-                self.elements["error"].set_text("A Clan with that name already exists.")
+                self.elements["error"].set_text("A Mischief with that name already exists.")
                 self.elements["error"].show()
                 return
             self.clan_name = new_name
@@ -453,12 +453,12 @@ class MakeClanScreen(Screens):
             if self.elements["name_entry"].get_text() == "":
                 self.elements['next_step'].disable()
             elif self.elements["name_entry"].get_text().startswith(" "):
-                self.elements["error"].set_text("Clan names cannot start with a space.")
+                self.elements["error"].set_text("Mischief names cannot start with a space.")
                 self.elements["error"].show()
                 self.elements['next_step'].disable()
             elif self.elements["name_entry"].get_text().casefold() in [clan.casefold() for clan in
                                                                        game.switches['clan_list']]:
-                self.elements["error"].set_text("A Clan with that name already exists.")
+                self.elements["error"].set_text("A Mischief with that name already exists.")
                 self.elements["error"].show()
                 self.elements['next_step'].disable()
             else:
@@ -797,7 +797,7 @@ class MakeClanScreen(Screens):
                                                                             pygame.transform.scale(text_box, (798, 922))
                                                                             , manager=MANAGER)
         self.elements['permi_warning'] = pygame_gui.elements.UITextBox(
-            "Your Clan's game mode is permanent and cannot be changed after Clan creation.",
+            "Your Mischief's game mode is permanent and cannot be changed later.",
             scale(pygame.Rect((200, 1162), (1200, 80))),
             object_id=get_text_box_theme("#text_box_30_horizcenter"),
             manager=MANAGER
@@ -835,7 +835,7 @@ class MakeClanScreen(Screens):
         self.sub_screen = 'name clan'
 
         # Create all the elements.
-        self.elements["random"] = UIImageButton(scale(pygame.Rect((448, 1190), (68, 68))), "",
+        self.elements["random"] = UIImageButton(scale(pygame.Rect((420, 1190), (68, 68))), "",
                                                 object_id="#random_dice_button"
                                                 , manager=MANAGER)
 
@@ -848,22 +848,22 @@ class MakeClanScreen(Screens):
         self.elements['next_step'] = UIImageButton(scale(pygame.Rect((800, 1270), (294, 60))), "",
                                                    object_id="#next_step_button", manager=MANAGER)
         self.elements['next_step'].disable()
-        self.elements["name_entry"] = pygame_gui.elements.UITextEntryLine(scale(pygame.Rect((530, 1195), (280, 58)))
+        self.elements["name_entry"] = pygame_gui.elements.UITextEntryLine(scale(pygame.Rect((500, 1195), (280, 58)))
                                                                           , manager=MANAGER)
         self.elements["name_entry"].set_allowed_characters(
             list("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_- "))
         self.elements["name_entry"].set_text_length_limit(11)
-        self.elements["clan"] = pygame_gui.elements.UITextBox("-Clan",
+        self.elements["clan"] = pygame_gui.elements.UITextBox("-Mischief",
                                                               scale(pygame.Rect((750, 1200), (200, 50))),
                                                               object_id="#text_box_30_horizcenter_light",
                                                               manager=MANAGER)
-        self.elements["reset_name"] = UIImageButton(scale(pygame.Rect((910, 1190), (268, 60))), "",
+        self.elements["reset_name"] = UIImageButton(scale(pygame.Rect((920, 1190), (268, 60))), "",
                                                     object_id="#reset_name_button", manager=MANAGER)
 
     def clan_name_header(self):
         self.elements["name_backdrop"] = pygame_gui.elements.UIImage(scale(pygame.Rect((584, 200), (432, 100))),
                                                                      MakeClanScreen.clan_frame_img, manager=MANAGER)
-        self.elements["clan_name"] = pygame_gui.elements.UITextBox(self.clan_name + "Clan",
+        self.elements["clan_name"] = pygame_gui.elements.UITextBox(self.clan_name + "Mischief",
                                                                    scale(pygame.Rect((585, 212), (432, 100))),
                                                                    object_id="#text_box_30_horizcenter_light",
                                                                    manager=MANAGER)
@@ -873,7 +873,7 @@ class MakeClanScreen(Screens):
         self.clear_all_page()
         self.sub_screen = 'choose leader'
 
-        self.elements['background'] = pygame_gui.elements.UIImage(scale(pygame.Rect((0, 828), (1600, 572))),
+        self.elements['background'] = pygame_gui.elements.UIImage(scale(pygame.Rect((0, 0), (1600, 1400))),
                                                                   MakeClanScreen.leader_img, manager=MANAGER)
 
         self.elements['background'].disable()
@@ -938,7 +938,7 @@ class MakeClanScreen(Screens):
                                                     visible=False, manager=MANAGER)
         # Error message, to appear if you can't choose that cat.
         self.elements['error_message'] = pygame_gui.elements.UITextBox(
-            "Too young to become leader",
+            "Too young to become king",
             scale(pygame.Rect((300, 706), (1000, 110))),
             object_id=get_text_box_theme("#text_box_30_horizcenter_red"),
             visible=False,
@@ -959,7 +959,7 @@ class MakeClanScreen(Screens):
         self.clear_all_page()
         self.sub_screen = 'choose deputy'
 
-        self.elements['background'] = pygame_gui.elements.UIImage(scale(pygame.Rect((0, 828), (1600, 572))),
+        self.elements['background'] = pygame_gui.elements.UIImage(scale(pygame.Rect((0, 0), (1600, 1400))),
                                                                   MakeClanScreen.deputy_img, manager=MANAGER)
         self.elements['background'].disable()
         self.clan_name_header()
@@ -1002,7 +1002,7 @@ class MakeClanScreen(Screens):
         self.clear_all_page()
         self.sub_screen = 'choose med cat'
 
-        self.elements['background'] = pygame_gui.elements.UIImage(scale(pygame.Rect((0, 828), (1600, 572))),
+        self.elements['background'] = pygame_gui.elements.UIImage(scale(pygame.Rect((0, 0), (1600, 1400))),
                                                                   MakeClanScreen.medic_img, manager=MANAGER)
         self.elements['background'].disable()
         self.clan_name_header()
@@ -1029,7 +1029,7 @@ class MakeClanScreen(Screens):
                                                     manager=MANAGER)
         # Error message, to appear if you can't choose that cat.
         self.elements['error_message'] = pygame_gui.elements.UITextBox(
-            "Too young to become a medicine cat",
+            "Too young to become a medicine rat",
             scale(pygame.Rect((300, 706), (1000, 110))),
             object_id=get_text_box_theme("#text_box_30_horizcenter_red"),
             visible=False,
@@ -1049,7 +1049,7 @@ class MakeClanScreen(Screens):
         self.clear_all_page()
         self.sub_screen = 'choose members'
 
-        self.elements['background'] = pygame_gui.elements.UIImage(scale(pygame.Rect((0, 828), (1600, 572))),
+        self.elements['background'] = pygame_gui.elements.UIImage(scale(pygame.Rect((0, 0), (1600, 1400))),
                                                                   pygame.transform.scale(
                                                                       pygame.image.load(
                                                                           "resources/images/pick_clan_screen/clan_none_light.png").convert_alpha(),
@@ -1170,7 +1170,7 @@ class MakeClanScreen(Screens):
                                                                         (200, 200)), manager=MANAGER)
         self.elements["continue"] = UIImageButton(scale(pygame.Rect((692, 500), (204, 60))), "",
                                                   object_id="#continue_button_small")
-        self.elements["save_confirm"] = pygame_gui.elements.UITextBox('Your Clan has been created and saved!',
+        self.elements["save_confirm"] = pygame_gui.elements.UITextBox('Your Mischief has been created and saved!',
                                                                       scale(pygame.Rect((200, 140), (1200, 60))),
                                                                       object_id=get_text_box_theme(
                                                                           "#text_box_30_horizcenter"),

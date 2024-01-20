@@ -821,7 +821,7 @@ class PatrolScreen(Screens):
                                                                                "#text_box_30_horizcenter"),
                                                                            manager=MANAGER)
 
-            self.elements['selected_bio'] = pygame_gui.elements.UITextBox(str(self.selected_cat.status) +
+            self.elements['selected_bio'] = pygame_gui.elements.UITextBox(str(self.selected_cat.status).replace('cat', 'rat').replace('warrior', 'scavenger').replace('leader', 'king').replace('newborn', 'pinkie').replace('kittypet','fancyrat').replace('Clan','Mischief') +
                                                                           "\n" + str(self.selected_cat.personality.trait) +
                                                                           "\n" + str(self.selected_cat.skills.skill_string(short=True)) +
                                                                           "\n" + str(

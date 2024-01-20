@@ -68,7 +68,7 @@ def bs_blurb_text(cat):
     backstory_text = BACKSTORIES["backstories"][backstory]
     
     if cat.status in ['kittypet', 'loner', 'rogue', 'former Clancat']:
-            return f"This cat is a {cat.status} and currently resides outside of the Clans."
+            return f"This cat is a {cat.status} and currently resides outside of the Mischiefs."
     
     return backstory_text
 
@@ -311,7 +311,7 @@ class ProfileScreen(Screens):
                         self.the_cat.outside, self.the_cat.exiled = False, False
                         self.the_cat.df = False
                         game.clan.add_to_starclan(self.the_cat)
-                        self.the_cat.thought = "Is relieved to once again hunt in StarClan"
+                        self.the_cat.thought = "Is relieved to once again hunt in StarColony"
                     else:
                         self.the_cat.outside, self.the_cat.exiled = False, False
                         self.the_cat.df = True
@@ -781,7 +781,7 @@ class ProfileScreen(Screens):
         elif the_cat.exiled:
             output += "<font color='#FF0000'>exiled</font>"
         else:
-            output += the_cat.status
+            output += the_cat.status.replace('cat', 'rat').replace('warrior', 'scavenger').replace('leader', 'king').replace('newborn', 'pinkie').replace('kittypet','fancyrat').replace('Clan','Mischief')
 
         # NEWLINE ----------
         output += "\n"

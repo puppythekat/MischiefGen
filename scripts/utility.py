@@ -1068,7 +1068,7 @@ def ceremony_text_adjust(Cat,
                          random_honor=None,
                          living_parents=(),
                          dead_parents=()):
-    clanname = str(game.clan.name + "Clan")
+    clanname = str(game.clan.name + "Mischief")
 
     random_honor = random_honor
     random_living_parent = None
@@ -1206,17 +1206,28 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
     # setting the cat_sprite (bc this makes things much easier)
     if not no_not_working and cat.not_working() and age != 'newborn' and game.config['cat_sprites']['sick_sprites']:
         if age in ['kitten', 'adolescent']:
-            cat_sprite = str(19)
+            cat_sprite = str(1)
         else:
-            cat_sprite = str(18)
+            cat_sprite = str(1)
     elif cat.pelt.paralyzed and age != 'newborn':
-        if age in ['kitten', 'adolescent']:
+        if age == 'kitten' and cat.pelt.length == 'long':
+            cat_sprite = str(18)
+        elif age == 'kitten':
+            cat_sprite = str(15)
+        elif age == 'adolecent' and cat.pelt.length == 'long':
+            cat_sprite = str(19)
+        elif age == 'adolecent':
+            cat_sprite = str(16)
+        elif age == 'adult' and cat.pelt.length == 'long':
+            cat_sprite = str(20)
+        elif age == 'adult':
             cat_sprite = str(17)
-        else:
-            if cat.pelt.length == 'long':
-                cat_sprite = str(16)
-            else:
-                cat_sprite = str(15)
+        elif age == 'elder' and cat.pelt.length == 'long':
+            cat_sprite = str(14)
+        elif age == 'elder':
+            cat_sprite = str(13)
+        
+
     else:
         if age == 'elder' and not game.config['fun']['all_cats_are_newborn']:
             age = 'senior'
@@ -1288,6 +1299,25 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
         if cat.pelt.vitiligo:
             new_sprite.blit(sprites.sprites['white' + cat.pelt.vitiligo + cat_sprite], (0, 0))
 
+        if not dead:
+            new_sprite.blit(sprites.sprites['lines' + cat_sprite], (0, 0))
+        elif cat.df:
+            new_sprite.blit(sprites.sprites['lineartdf' + cat_sprite], (0, 0))
+        elif dead:
+            new_sprite.blit(sprites.sprites['lineartdead' + cat_sprite], (0, 0)),
+        # draw skin and scars2
+        blendmode = pygame.BLEND_RGBA_MIN
+        new_sprite.blit(sprites.sprites['skin' + cat.pelt.skin + cat_sprite], (0, 0))
+        
+        if not scars_hidden:
+            for scar in cat.pelt.scars:
+                if scar in cat.pelt.scars2:
+                    new_sprite.blit(sprites.sprites['scars' + scar + cat_sprite], (0, 0), special_flags=blendmode)
+ # draw line art
+        if game.settings['shaders'] and not dead:
+            new_sprite.blit(sprites.sprites['shaders' + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGB_MULT)
+            new_sprite.blit(sprites.sprites['lighting' + cat_sprite], (0, 0))
+            
         # draw eyes & scars1
         eyes = sprites.sprites['eyes' + cat.pelt.eye_colour + cat_sprite].copy()
         if cat.pelt.eye_colour2 != None:
@@ -1301,26 +1331,6 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
                 if scar in cat.pelt.scars3:
                     new_sprite.blit(sprites.sprites['scars' + scar + cat_sprite], (0, 0))
 
-        # draw line art
-        if game.settings['shaders'] and not dead:
-            new_sprite.blit(sprites.sprites['shaders' + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGB_MULT)
-            new_sprite.blit(sprites.sprites['lighting' + cat_sprite], (0, 0))
-
-        if not dead:
-            new_sprite.blit(sprites.sprites['lines' + cat_sprite], (0, 0))
-        elif cat.df:
-            new_sprite.blit(sprites.sprites['lineartdf' + cat_sprite], (0, 0))
-        elif dead:
-            new_sprite.blit(sprites.sprites['lineartdead' + cat_sprite], (0, 0))
-        # draw skin and scars2
-        blendmode = pygame.BLEND_RGBA_MIN
-        new_sprite.blit(sprites.sprites['skin' + cat.pelt.skin + cat_sprite], (0, 0))
-        
-        if not scars_hidden:
-            for scar in cat.pelt.scars:
-                if scar in cat.pelt.scars2:
-                    new_sprite.blit(sprites.sprites['scars' + scar + cat_sprite], (0, 0), special_flags=blendmode)
-
         # draw accessories
         if not acc_hidden:        
             if cat.pelt.accessory in cat.pelt.plant_accessories:
@@ -1329,29 +1339,26 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
                 new_sprite.blit(sprites.sprites['acc_wild' + cat.pelt.accessory + cat_sprite], (0, 0))
             elif cat.pelt.accessory in cat.pelt.collars:
                 new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
-
-        # Apply fading fog
-        if cat.pelt.opacity <= 97 and not cat.prevent_fading and game.clan.clan_settings["fading"] and dead:
-
-            stage = "0"
-            if 80 >= cat.pelt.opacity > 45:
-                # Stage 1
-                stage = "1"
-            elif cat.pelt.opacity <= 45:
-                # Stage 2
-                stage = "2"
-
-            new_sprite.blit(sprites.sprites['fademask' + stage + cat_sprite],
-                            (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
-
-            if cat.df:
-                temp = sprites.sprites['fadedf' + stage + cat_sprite].copy()
-                temp.blit(new_sprite, (0, 0))
-                new_sprite = temp
-            else:
-                temp = sprites.sprites['fadestarclan' + stage + cat_sprite].copy()
-                temp.blit(new_sprite, (0, 0))
-                new_sprite = temp
+                
+        # draw ears
+        if not dead and cat.pelt.topear == False :
+            new_sprite.blit(sprites.sprites['linesdumbo' + cat_sprite], (0, 0))
+            new_sprite.blit(sprites.sprites['dumbo' + cat.pelt.dumbo + cat_sprite], (0, 0))
+        if not dead and cat.pelt.topear == True :
+            new_sprite.blit(sprites.sprites['linestop' + cat_sprite], (0, 0))
+            new_sprite.blit(sprites.sprites['top' + cat.pelt.top + cat_sprite], (0, 0))
+        elif cat.df and cat.pelt.topear == False :
+            new_sprite.blit(sprites.sprites['linesdumbo' + cat_sprite], (0, 0))
+            new_sprite.blit(sprites.sprites['dumbo' + cat.pelt.dumbo + cat_sprite], (0, 0))
+        elif cat.df and cat.pelt.topear == True :
+            new_sprite.blit(sprites.sprites['linesdumbo' + cat_sprite], (0, 0))
+            new_sprite.blit(sprites.sprites['top'  + cat.pelt.top + cat_sprite], (0, 0))
+        elif dead and cat.pelt.topear == False :
+            new_sprite.blit(sprites.sprites['lineartdeaddumbo' + cat_sprite], (0, 0))
+            new_sprite.blit(sprites.sprites['dumbo' + cat.pelt.dumbo + cat_sprite], (0, 0))
+        elif dead and cat.pelt.topear == True :
+            new_sprite.blit(sprites.sprites['lineartdeadtop' + cat_sprite], (0, 0))
+            new_sprite.blit(sprites.sprites['top' + cat.pelt.top + cat_sprite], (0, 0))
 
         # reverse, if assigned so
         if cat.pelt.reverse:

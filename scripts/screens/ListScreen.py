@@ -206,11 +206,11 @@ class ListScreen(Screens):
         self.filter_fav = UIImageButton(scale(pygame.Rect((209, y_pos), (76, 68))), "",
                                         object_id="#fav_cat",
                                         manager=MANAGER,
-                                        tool_tip_text='hide favourite cat indicators')
+                                        tool_tip_text='hide favourite rat indicators')
 
         self.filter_not_fav = UIImageButton(scale(pygame.Rect((209, y_pos), (76, 68))), "",
                                             object_id="#not_fav_cat", manager=MANAGER,
-                                            tool_tip_text='show favourite cat indicators')
+                                            tool_tip_text='show favourite rat indicators')
 
         if game.clan.clan_settings["show fav"]:
             self.filter_not_fav.hide()
@@ -231,11 +231,11 @@ class ListScreen(Screens):
         # buttons for choosing which group you are currently viewing
         self.show_dead_button = UIImageButton(scale(pygame.Rect((512, y_pos), (210, 68))), "",
                                               object_id="#show_dead_button", manager=MANAGER,
-                                              tool_tip_text='view cats in the afterlife',
+                                              tool_tip_text='view rats in the afterlife',
                                               starting_height=2)
         self.show_living_button = UIImageButton(scale(pygame.Rect((512, y_pos), (210, 68))), "",
                                                 object_id="#show_living_button", manager=MANAGER,
-                                                tool_tip_text='view cats currently alive')
+                                                tool_tip_text='view rats currently alive')
         if self.death_status == 'dead':
             self.show_dead_button.hide()
         else:
@@ -556,11 +556,11 @@ class ListScreen(Screens):
 
         # update title
         if self.current_group == 'clan':
-            self.update_heading_text(f'{game.clan.name}Clan')
+            self.update_heading_text(f'{game.clan.name}Mischief')
         elif self.current_group == 'cotc':
-            self.update_heading_text(f'Cats Outside the Clan')
+            self.update_heading_text(f'Mischiefless Rats')
         elif self.current_group == 'sc':
-            self.update_heading_text(f'StarClan')
+            self.update_heading_text(f'StarColony')
         elif self.current_group == 'ur':
             self.update_heading_text(f'Unknown Residence')
         elif self.current_group == 'df':
