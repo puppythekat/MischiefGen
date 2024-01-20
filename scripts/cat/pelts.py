@@ -212,9 +212,9 @@ class Pelt():
             "senior": senior_sprite if senior_sprite is not None else 0,
             "para_adult": para_adult_sprite if para_adult_sprite is not None else 0,
         }        
-        self.cat_sprites['newborn'] = 1
-        self.cat_sprites["sick_adult"] = 2
-        self.cat_sprites["sick_young"] = 3
+        self.cat_sprites['newborn'] = 0
+        self.cat_sprites["sick_adult"] = 1
+        self.cat_sprites["sick_young"] = 1
         
         self.reverse = reverse
         self.topear = topear

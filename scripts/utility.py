@@ -1210,13 +1210,14 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
         else:
             cat_sprite = str(1)
     elif cat.pelt.paralyzed and age != 'newborn':
+        cat_sprite = str(0)
         if age == 'kitten' and cat.pelt.length == 'long':
             cat_sprite = str(18)
         elif age == 'kitten':
             cat_sprite = str(15)
-        elif age == 'adolecent' and cat.pelt.length == 'long':
+        elif age == 'adolescent' and cat.pelt.length == 'long':
             cat_sprite = str(19)
-        elif age == 'adolecent':
+        elif age == 'adolescent':
             cat_sprite = str(16)
         elif age == 'adult' and cat.pelt.length == 'long':
             cat_sprite = str(20)
