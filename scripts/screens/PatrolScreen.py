@@ -223,7 +223,7 @@ class PatrolScreen(Screens):
 
     def screen_switches(self):
         self.set_disabled_menu_buttons(["patrol_screen"])
-        self.update_heading_text(f'{game.clan.name}Clan')
+        self.update_heading_text(f'{game.clan.name}Mischief')
         self.show_menu_buttons()
         self.open_choose_cats_screen()
 
@@ -381,7 +381,7 @@ class PatrolScreen(Screens):
 
         self.elements["info"] = pygame_gui.elements.UITextBox(
             'Choose up to six cats to take on patrol.\n'
-            'Smaller patrols help cats gain more experience, but larger patrols are safer.',
+            'Smaller patrols help rats gain more experience, but larger patrols are safer.',
             scale(pygame.Rect((375, 190), (850, 200))), object_id=get_text_box_theme("#text_box_22_horizcenter"))
         self.elements["cat_frame"] = pygame_gui.elements.UIImage(scale(pygame.Rect((600, 330), (400, 550))),
                                                                  pygame.image.load(
