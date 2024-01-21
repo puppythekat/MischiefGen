@@ -115,9 +115,9 @@
             "Leaf-bare",
             "war"
         ],
-        "death_text": "m_c drowned after being pushed out to sea by o_c warriors.",
+        "death_text": "m_c drowned after being pushed out to sea by o_c scavengers.",
         "history_text": {
-            "reg_death": "m_c was pushed out to sea by enemy warriors."
+            "reg_death": "m_c was pushed out to sea by enemy scavengers."
         }
     }
 ]

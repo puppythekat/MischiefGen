@@ -140,7 +140,7 @@
 			"m_c divides r_c into extra patrols.",
 			"m_c gives r_c a particularly hard task, expecting {PRONOUN/r_c/object} to fail.",
 			"m_c threatens r_c with never passing {PRONOUN/r_c/poss} assessment!",
-			"m_c tells other cats that r_c is not doing well in {PRONOUN/r_c/poss} training."
+			"m_c tells other rats that r_c is not doing well in {PRONOUN/r_c/poss} training."
 		],
 		"main_status_constraint": [
 			"deputy",
@@ -183,7 +183,7 @@
 		"interactions": [
 			"m_c had a fight with r_c.",
 			"m_c had a heated argument with r_c and said some very hurtful things.",
-			"m_c argues with r_c in front of other cats and reveals something embarrassing."
+			"m_c argues with r_c in front of other rats and reveals something embarrassing."
 		],
 		"reaction_random_cat": {
 			"dislike": "increase"
@@ -205,9 +205,9 @@
 		"id": "dislike_inc_high4",
 		"intensity": "high",
 		"interactions": [
-			"m_c accuses r_c of being a bad leader.",
-			"m_c accuses r_c of not taking care of the Clan.",
-			"m_c accuses r_c of not putting the Clan first."
+			"m_c accuses r_c of being a bad king.",
+			"m_c accuses r_c of not taking care of the Mischief.",
+			"m_c accuses r_c of not putting the Mischief first."
 		],
 		"relationship_constraint": [
 			"dislike_50"
@@ -240,7 +240,7 @@
 		"interactions": [
 			"m_c is scolding r_c.",
 			"m_c is bossing r_c around.",
-			"m_c and r_c are arguing about something important and risking the Clan's safety."
+			"m_c and r_c are arguing about something important and risking the Mischief's safety."
 		],
 		"main_status_constraint": [
 			"elder",
@@ -262,7 +262,7 @@
 			"m_c thinks {PRONOUN/m_c/subject} should be deputy instead of r_c.",
 			"m_c is tired from r_c putting {PRONOUN/m_c/object} on so many patrols.",
 			"m_c rolls {PRONOUN/m_c/poss} eyes whenever r_c assigns patrols.",
-			"m_c tries to convince other cats that r_c should step down from being deputy."
+			"m_c tries to convince other rats that r_c should step down from being deputy."
 		],
 		"relationship_constraint": [
 			"dislike_40"
@@ -312,7 +312,7 @@
 		"id": "dislike_kit_inc_med3",
 		"interactions": [
 			"m_c whines that r_c won't play with {PRONOUN/m_c/object}, even though {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} always around camp.",
-			"m_c doesn't understand why r_c won't let {PRONOUN/m_c/object} play in the medicine cat den."
+			"m_c doesn't understand why r_c won't let {PRONOUN/m_c/object} play in the medicine rat den."
 		],
 		"main_status_constraint": [
 			"kitten"

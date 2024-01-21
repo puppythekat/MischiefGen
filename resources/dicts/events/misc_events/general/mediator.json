@@ -10,7 +10,7 @@
             "other_clan",
             "rel_up"
         ],
-        "event_text": "m_c goes to o_c in an attempt to ease the tension of war between the Clans: it goes well, and o_c begins to draw back from c_n's territory!",
+        "event_text": "m_c goes to o_c in an attempt to ease the tension of war between the Mischiefs: it goes well, and o_c begins to draw back from c_n's territory!",
         "cat_trait": null,
         "cat_skill": null,
         "other_cat_trait": null,
@@ -27,7 +27,7 @@
             "other_clan",
             "rel_down"
         ],
-        "event_text": "m_c goes to o_c in an attempt to ease the tension of war between the Clans: it doesn't go well, and o_c further advances in c_n's territory.",
+        "event_text": "m_c goes to o_c in an attempt to ease the tension of war between the Mischiefs: it doesn't go well, and o_c further advances in c_n's territory.",
         "cat_trait": null,
         "cat_skill": null,
         "other_cat_trait": null,
@@ -47,7 +47,7 @@
             "trust",
             "neg_dislike"
         ],
-        "event_text": "m_c pulls r_c to the side, quietly asking {PRONOUN/r_c/object} about {PRONOUN/r_c/poss} crush on a fellow Clanmate.",
+        "event_text": "m_c pulls r_c to the side, quietly asking {PRONOUN/r_c/object} about {PRONOUN/r_c/poss} crush on a fellow Mischiefmate.",
         "cat_trait": null,
         "cat_skill": null,
         "other_cat_trait": null,
@@ -178,7 +178,7 @@
             "war",
             "other_cat_leader"
         ],
-        "event_text": "m_c is checking in on every cat in the camp to make sure everyone is staying healthy in the midst of war.",
+        "event_text": "m_c is checking in on every rat in the camp to make sure everyone is staying healthy in the midst of war.",
         "cat_trait": null,
         "cat_skill": null,
         "other_cat_trait": [

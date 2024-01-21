@@ -13,7 +13,7 @@
 		"interactions": [
 			"m_c quickly apologizes after bumping into r_c. They have a small laugh about it.",
 			"m_c has been spending time with r_c lately.",
-			"m_c shares a joke about a neighboring Clan with r_c.",
+			"m_c shares a joke about a neighboring Mischief with r_c.",
 			"m_c reassures r_c about something that was bothering {PRONOUN/r_c/object}."
 		],
 		"reaction_random_cat": {
@@ -25,7 +25,7 @@
 		"intensity": "low",
 		"interactions": [
 			"m_c is asking r_c to check {PRONOUN/m_c/object} for ticks.",
-			"m_c is happy to see r_c is the cat who is helping {PRONOUN/m_c/object} today."
+			"m_c is happy to see r_c is the rat who is helping {PRONOUN/m_c/object} today."
 		],
 		"main_status_constraint": [
 			"elder"

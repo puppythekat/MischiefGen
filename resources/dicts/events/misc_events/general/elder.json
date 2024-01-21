@@ -21,7 +21,7 @@
             "Greenleaf",
             "Leaf-fall"
         ],
-        "event_text": "m_c calls the younger cats to {PRONOUN/m_c/poss} den to tell stories of the Clan's past.",
+        "event_text": "m_c calls the younger rats to {PRONOUN/m_c/poss} den to tell stories of the Mischief's past.",
         "cat_trait": null,
         "cat_skill": [
             "STORY,1"
@@ -71,7 +71,7 @@
             "Greenleaf",
             "Leaf-fall"
         ],
-        "event_text": "m_c places small feathers and shining stones near the nest of each Clanmate while they're on patrol.",
+        "event_text": "m_c places small feathers and shining stones near the nest of each Mischiefmate while they're on patrol.",
         "cat_trait": null,
         "cat_skill": [
             "CAMP,2"
@@ -87,7 +87,7 @@
             "Greenleaf",
             "Leaf-fall"
         ],
-        "event_text": "m_c keeps an eye on the camp while the warriors are on patrol.",
+        "event_text": "m_c keeps an eye on the camp while the scavengers are on patrol.",
         "cat_trait": null,
         "cat_skill": [
             "CAMP,3"
@@ -120,7 +120,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c awakens with multiple objects stacked on {PRONOUN/m_c/object}, and the sound of giggling cats in the distance.",
+        "event_text": "m_c awakens with multiple objects stacked on {PRONOUN/m_c/object}, and the sound of giggling rats in the distance.",
         "cat_trait": null,
         "cat_skill": null,
         "other_cat_trait": null,
@@ -138,7 +138,7 @@
             "respect",
             "clan_kits"
         ],
-        "event_text": "m_c calls out to some eager kits, and after they have situated themselves in front of m_c, {PRONOUN/m_c/subject} {VERB/m_c/start/starts} telling the kits a thrilling story of times long past.",
+        "event_text": "m_c calls out to some eager pinkies, and after they have situated themselves in front of m_c, {PRONOUN/m_c/subject} {VERB/m_c/start/starts} telling the pinkies a thrilling story of times long past.",
         "cat_skill": [
             "STORY,1",
             "LORE,2"

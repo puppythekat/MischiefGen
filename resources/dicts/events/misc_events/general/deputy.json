@@ -36,7 +36,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c travels to the other Clans to bring them an important message.",
+        "event_text": "m_c travels to the other Mischiefs to bring them an important message.",
         "cat_trait": null,
         "cat_skill": null,
         "other_cat_trait": null,
@@ -68,7 +68,7 @@
             "respect",
             "trust"
         ],
-        "event_text": "m_c is struggling to accept the fact that {PRONOUN/m_c/subject} may have to step up as leader if r_c loses {PRONOUN/r_c/poss} last life. How could {PRONOUN/m_c/subject} {VERB/m_c/go/goes} on without {PRONOUN/m_c/poss} beloved leader? How difficult will it to be to lead in {PRONOUN/r_c/poss} stead?",
+        "event_text": "m_c is struggling to accept the fact that {PRONOUN/m_c/subject} may have to step up as king if r_c loses {PRONOUN/r_c/poss} last life. How could {PRONOUN/m_c/subject} {VERB/m_c/go/goes} on without {PRONOUN/m_c/poss} beloved king? How difficult will it to be to lead in {PRONOUN/r_c/poss} stead?",
         "cat_trait": [
             "insecure",
             "lonesome",
@@ -86,7 +86,7 @@
             "other_cat",
             "other_cat_leader"
         ],
-        "event_text": "m_c is struggling to accept the fact that {PRONOUN/m_c/subject} may have to step up as leader if r_c loses {PRONOUN/r_c/poss} last life.",
+        "event_text": "m_c is struggling to accept the fact that {PRONOUN/m_c/subject} may have to step up as king if r_c loses {PRONOUN/r_c/poss} last life.",
         "cat_trait": [
             "insecure",
             "lonesome",

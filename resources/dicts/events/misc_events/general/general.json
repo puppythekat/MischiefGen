@@ -7,7 +7,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c is caught breaking the Warrior Code."
+        "event_text": "m_c is caught breaking the Scavenger Code."
     },
     {
         "camp": "any",
@@ -58,7 +58,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c is caught outside of the Clan's territory."
+        "event_text": "m_c is caught outside of the Mischief's territory."
     },
     {
         "camp": "any",
@@ -250,7 +250,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c gathered up the kits to tell them stories of story_list.",
+        "event_text": "m_c gathered up the pinkies to tell them stories of story_list.",
         "cat_skill": [
             "LORE,2",
             "KIT,1",
@@ -265,7 +265,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c spends the evening regaling the Clan with stories of story_list.",
+        "event_text": "m_c spends the evening regaling the Mischief with stories of story_list.",
         "cat_skill": [
             "LORE,2",
             "KIT,1",
@@ -284,7 +284,7 @@
             "neg_dislike",
             "Leaf-bare"
         ],
-        "event_text": "m_c and r_c begin a small camp snowball fight while on guard duty, eventually getting the whole Clan to join in."
+        "event_text": "m_c and r_c begin a small camp snowball fight while on guard duty, eventually getting the whole Mischief to join in."
     },
     {
         "camp": "any",
@@ -324,7 +324,7 @@
             "platonic",
             "romantic"
         ],
-        "event_text": "m_c and r_c watch the Clan's kits play and daydream about having their own one day."
+        "event_text": "m_c and r_c watch the Mischief's pinkies play and daydream about having their own one day."
     },
     {
         "camp": "any",
@@ -336,7 +336,7 @@
             "other_cat",
             "other_cat_mate"
         ],
-        "event_text": "m_c watches r_c give an elder the best piece of prey on the pile. {PRONOUN/m_c/subject/CAP} {VERB/m_c/feel/feels} lucky to have such a kind cat as {PRONOUN/m_c/poss} mate."
+        "event_text": "m_c watches r_c give an elder the best piece of prey on the pile. {PRONOUN/m_c/subject/CAP} {VERB/m_c/feel/feels} lucky to have such a kind rat as {PRONOUN/m_c/poss} mate."
     },
     {
         "camp": "any",
@@ -348,7 +348,7 @@
             "other_cat",
             "other_cat_mate"
         ],
-        "event_text": "m_c watches r_c give an elder the best piece of prey on the pile. {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} lucky to have such a kind cat as their mate.",
+        "event_text": "m_c watches r_c give an elder the best piece of prey on the pile. {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} lucky to have such a kind rat as their mate.",
         "other_cat_trait": [
             "compassionate",
             "loving",
@@ -394,7 +394,7 @@
             "romantic",
             "clan_kits"
         ],
-        "event_text": "m_c listens bashfully as r_c tells the story of how {PRONOUN/r_c/subject} fell in love with {PRONOUN/r_c/poss} mate to a group of starry-eyed kits."
+        "event_text": "m_c listens bashfully as r_c tells the story of how {PRONOUN/r_c/subject} fell in love with {PRONOUN/r_c/poss} mate to a group of starry-eyed pinkies."
     },
     {
         "camp": "any",
@@ -507,7 +507,7 @@
             "Leaf-bare",
             "Leaf-fall"
         ],
-        "event_text": "m_c considers, as {PRONOUN/m_c/subject} {VERB/m_c/look/looks} out over the Clan, if perhaps this isn't where {PRONOUN/m_c/subject} {VERB/m_c/belong/belongs}.",
+        "event_text": "m_c considers, as {PRONOUN/m_c/subject} {VERB/m_c/look/looks} out over the Mischief, if perhaps this isn't where {PRONOUN/m_c/subject} {VERB/m_c/belong/belongs}.",
         "cat_trait": [
             "adventurous",
             "daring",
@@ -639,7 +639,7 @@
             "murder_reveal",
             "other_cat"
         ],
-        "event_text": "m_c's cold eyes don't blink when {PRONOUN/m_c/subject} {VERB/m_c/are/is} accused of murdering mur_c, and only simply states that the Clan is better off without mur_c anyways.",
+        "event_text": "m_c's cold eyes don't blink when {PRONOUN/m_c/subject} {VERB/m_c/are/is} accused of murdering mur_c, and only simply states that the Mischief is better off without mur_c anyways.",
         "cat_trait": [
             "cold"
         ]
@@ -654,7 +654,7 @@
             "murder_reveal",
             "other_cat"
         ],
-        "event_text": "m_c boldly confesses to the entire Clan that {PRONOUN/m_c/subject} killed mur_c. m_c claims that mur_c deserved to pay for what {PRONOUN/mur_c/subject} did.",
+        "event_text": "m_c boldly confesses to the entire Mischief that {PRONOUN/m_c/subject} killed mur_c. m_c claims that mur_c deserved to pay for what {PRONOUN/mur_c/subject} did.",
         "cat_trait": [
             "vengeful"
         ]
@@ -699,7 +699,7 @@
             "murder_reveal",
             "other_cat"
         ],
-        "event_text": "m_c can't keep this secret anymore. {PRONOUN/m_c/subject/CAP} {VERB/m_c/request/requests} a Clan meeting, where {PRONOUN/m_c/subject} {VERB/m_c/reveal/reveals} the terrible secret {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} kept.",
+        "event_text": "m_c can't keep this secret anymore. {PRONOUN/m_c/subject/CAP} {VERB/m_c/request/requests} a Mischief meeting, where {PRONOUN/m_c/subject} {VERB/m_c/reveal/reveals} the terrible secret {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} kept.",
         "cat_trait": [
             "righteous",
             "bold",

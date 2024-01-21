@@ -124,9 +124,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c died of kittencough.",
+        "death_text": "m_c died of pinkietencough.",
         "history_text": {
-            "reg_death": "m_c died of kittencough."
+            "reg_death": "m_c died of pinkietencough."
         },
         "cat_trait": null,
         "cat_skill": null,
@@ -186,15 +186,15 @@
         "tags": [
             "multi_death",
             "classic",
-            "other_cat_kit",
+            "other_cat_pinkie",
             "Newleaf",
             "Greenleaf",
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "r_c and m_c die from a bout of kittencough.",
+        "death_text": "r_c and m_c die from a bout of pinkiecough.",
         "history_text": {
-            "reg_death": "m_c died of kittencough."
+            "reg_death": "m_c died of pinkiecough."
         },
         "cat_trait": null,
         "cat_skill": null,
@@ -206,7 +206,7 @@
         "tags": [
             "multi_death",
             "classic",
-            "other_cat_kit",
+            "other_cat_pinkie",
             "Newleaf",
             "Greenleaf",
             "Leaf-fall",
@@ -226,7 +226,7 @@
         "tags": [
             "multi_death",
             "classic",
-            "other_cat_kit",
+            "other_cat_pinkie",
             "Newleaf",
             "Greenleaf",
             "Leaf-fall",
@@ -254,7 +254,7 @@
             "neg_platonic",
             "dislike"
         ],
-        "death_text": "m_c excitedly follows r_c a short distance from camp to begin the promised battle training. r_c says something about how real warriors don't hold back, even in a spar. m_c nods eagerly. {PRONOUN/m_c/subject/CAP} barely {VERB/m_c/have/has} time to duck as r_c's paw whistles past {PRONOUN/m_c/poss} head. The kit stumbles backwards, tripping over {PRONOUN/m_c/poss} paws, {PRONOUN/m_c/poss} head landing squarely on a rock.",
+        "death_text": "m_c excitedly follows r_c a short distance from camp to begin the promised battle training. r_c says something about how real scavengers don't hold back, even in a spar. m_c nods eagerly. {PRONOUN/m_c/subject/CAP} barely {VERB/m_c/have/has} time to duck as r_c's paw whistles past {PRONOUN/m_c/poss} head. The pinkie stumbles backwards, tripping over {PRONOUN/m_c/poss} paws, {PRONOUN/m_c/poss} head landing squarely on a rock.",
         "history_text": {
             "reg_death": "m_c was killed in battle training with r_c.",
             "reg_murder_unrevealed": "m_c was killed in battle training with r_c."
@@ -277,7 +277,7 @@
             "neg_platonic",
             "dislike"
         ],
-        "death_text": "m_c quietly pads after r_c, eyes bright with the promise of exploring the territory. r_c suddenly comes to a stop beside a spiky bush, pointing at it with a claw. Apparently the shiny red berries taste just like fresh prey, and r_c is offering one to m_c! The kit excitedly nods and grabs a berry with {PRONOUN/m_c/poss} teeth. It's not exactly like prey... the kit's thought trails off as darkness takes over {PRONOUN/m_c/poss} vision.",
+        "death_text": "m_c quietly pads after r_c, eyes bright with the promise of exploring the territory. r_c suddenly comes to a stop beside a spiky bush, pointing at it with a claw. Apparently the shiny red berries taste just like fresh prey, and r_c is offering one to m_c! The pinkie excitedly nods and grabs a berry with {PRONOUN/m_c/poss} teeth. It's not exactly like prey... the pinkie's thought trails off as darkness takes over {PRONOUN/m_c/poss} vision.",
         "history_text": {
             "reg_death": "m_c ate deathberries and succumbed to the poison.",
             "reg_murder_unrevealed": "m_c was fed deathberries by r_c."

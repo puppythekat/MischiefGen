@@ -7,35 +7,35 @@
             "Is looking forward to today",
             "Is feeling down...",
             "Is feeling happy!",
-            "Is curious about other Clans",
+            "Is curious about other Mischiefs",
             "Is feeling sassy today",
             "Is thinking about a message to send",
             "Wishes {PRONOUN/m_c/subject} {VERB/m_c/were/was} still alive",
-            "Is admiring StarClan territory",
+            "Is admiring StarColony territory",
             "Is thinking about {PRONOUN/m_c/poss} life",
             "Is missing a loved one",
-            "Is hoping to meet with a medicine cat soon",
+            "Is hoping to meet with a medicine rat soon",
             "Is admiring the stars in {PRONOUN/m_c/poss} fur",
-            "Is watching over a Clan ceremony",
-            "Is hoping to give a life to a new leader",
+            "Is watching over a Mischief ceremony",
+            "Is hoping to give a life to a new king",
             "Is hoping {PRONOUN/m_c/subject} will be remembered",
-            "Is watching over the Clan",
-            "Is worried about the Clan",
+            "Is watching over the Mischief",
+            "Is worried about the Mischief",
             "Is relaxing in the sun",
             "Is wondering about Twolegs",
             "Is thinking about {PRONOUN/m_c/poss} ancient ancestors",
-            "Is worried about the cats in the Dark Forest",
-            "Is thinking of advice to give to a medicine cat",
-            "Is exploring StarClan",
-            "Is sad seeing how the Clan has changed",
+            "Is worried about the rats in the Dark Forest",
+            "Is thinking of advice to give to a medicine rat",
+            "Is exploring StarColony",
+            "Is sad seeing how the Mischief has changed",
             "Wishes {PRONOUN/m_c/subject} could speak to old friends",
             "Is sneezing on stardust",
-            "Is comforting another StarClan cat",
-            "Is exploring StarClan's hunting grounds",
-            "Is hunting mice in StarClan",
-            "Is chattering at the birds in StarClan",
-            "Is chasing rabbits in StarClan",
-            "Can feel some cat forgetting {PRONOUN/m_c/object}..."
+            "Is comforting another StarColony rat",
+            "Is exploring StarColony's hunting grounds",
+            "Is hunting mice in StarColony",
+            "Is chattering at the birds in StarColony",
+            "Is chasing rabbits in StarColony",
+            "Can feel some rat forgetting {PRONOUN/m_c/object}..."
         ],
         "random_living_status":[
             "living",
@@ -57,8 +57,8 @@
             "Is having a serious fight with r_c",
             "Wants to spend more time with r_c",
             "Is thinking about future prophecies with r_c",
-            "Is watching over the Clan with r_c",
-            "Is listening to long-forgotten stories about the Clan",
+            "Is watching over the Mischief with r_c",
+            "Is listening to long-forgotten stories about the Mischief",
             "Is gossiping with r_c"
         ],
         "random_living_status": [
@@ -69,7 +69,7 @@
         "id": "founder_dead_to_dead_other",
         "thoughts": [
             "Is speaking with r_c about how c_n came to be",
-            "Is telling other StarClan cats stories of c_n's beginning"
+            "Is telling other StarColony rats stories of c_n's beginning"
         ],
         "main_age_constraint": [
             "adolescent",
@@ -87,7 +87,7 @@
         "id": "founder_dead_to_dead_other_founder",
         "thoughts": [
             "Is reminiscing with r_c about how c_n came to be",
-            "Is speaking with r_c about how the Clan they founded had changed"
+            "Is speaking with r_c about how the Mischief they founded had changed"
         ],
         "main_age_constraint": [
             "adolescent",
@@ -116,7 +116,7 @@
             "Has seen r_c's future demise",
             "Is looking to visit r_c in a dream soon",
             "Accidentally found {PRONOUN/m_c/self} in r_c's dreams the other night",
-            "Knows what r_c's secret is and wants to tell some cat",
+            "Knows what r_c's secret is and wants to tell some rat",
             "Is judging r_c"
         ],
         "random_living_status": [
@@ -126,7 +126,7 @@
     {
         "id": "founder_dead_to_alive_kit",
         "thoughts": [
-            "Is watching over the newest additions to {PRONOUN/m_c/poss} Clan"
+            "Is watching over the newest additions to {PRONOUN/m_c/poss} Mischief"
         ],
         "main_age_constraint": [
             "adolescent",
@@ -146,21 +146,21 @@
     {
         "id": "gen_dead_med_cat",
         "thoughts": [
-            "Regrets leaving the Clan one medicine cat short",
-            "Is worried about the Clan's ability to survive the latest illness",
-            "Looks after the newborns in StarClan",
+            "Regrets leaving the Mischief one medicine rat short",
+            "Is worried about the Mischief's ability to survive the latest illness",
+            "Looks after the pinkies in StarColony",
             "Is watching c_n, ready to send an omen"
         ],
         "main_status_constraint": [
             "medicine cat",
-            "medicine cat apprentice"
+            "medicine rat apprentice"
         ]
     },
     {
         "id": "dead_med_cat_to_alive_med_cat",
         "thoughts": [
             "Has an important message for r_c",
-            "Is distraught that {PRONOUN/m_c/subject} can't help r_c take care of the Clan",
+            "Is distraught that {PRONOUN/m_c/subject} can't help r_c take care of the Mischief",
             "Sends an omen of things to come to r_c",
             "Is excited that {PRONOUN/m_c/subject} {VERB/m_c/are/is} able to help c_n by sharing a new prophecy",
             "Whispers useful suggestions in r_c's ears",
@@ -169,11 +169,11 @@
         ],
         "main_status_constraint": [
             "medicine cat",
-            "medicine cat apprentice"
+            "medicine rat apprentice"
         ],
         "random_status_constraint": [
             "medicine cat",
-            "medicine cat apprentice"
+            "medicine rat apprentice"
         ],
         "random_living_status": [
             "living"
@@ -186,7 +186,7 @@
         ],
         "main_status_constraint": [
             "medicine cat",
-            "medicine cat apprentice"
+            "medicine rat apprentice"
         ],
         "random_living_status": [
             "living"
@@ -196,11 +196,11 @@
         "id": "dead_med_cat_to_dead_other",
         "thoughts": [
             "Shares {PRONOUN/m_c/poss} knowledge with r_c",
-            "Is discussing Clan matters with r_c"
+            "Is discussing Mischief matters with r_c"
         ],
         "main_status_constraint": [
             "medicine cat",
-            "medicine cat apprentice"
+            "medicine rat apprentice"
         ],
         "random_living_status": [
             "starclan"
@@ -214,7 +214,7 @@
         ],
         "main_status_constraint": [
             "medicine cat",
-            "medicine cat apprentice"
+            "medicine rat apprentice"
         ],
         "random_living_status": [
             "starclan"
@@ -248,14 +248,14 @@
     {
         "id": "gen_dead_app",
         "thoughts": [
-            "Wants to use {PRONOUN/m_c/poss} training to help StarClan",
+            "Wants to use {PRONOUN/m_c/poss} training to help StarColony",
             "Is sad {PRONOUN/m_c/subject} couldn't complete {PRONOUN/m_c/poss} training",
             "Tries to continue {PRONOUN/m_c/poss} training on {PRONOUN/m_c/poss} own",
-            "Is listening intently to other StarClan cats' stories"
+            "Is listening intently to other StarColony rats' stories"
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "medicine rat apprentice",
             "mediator apprentice"
         ]
     },
@@ -268,7 +268,7 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "medicine rat apprentice",
             "mediator apprentice"
         ],
         "random_living_status": [
@@ -283,7 +283,7 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "medicine rat apprentice",
             "mediator apprentice"
         ],
         "relationship_constraint": [
@@ -294,7 +294,7 @@
         ],
         "random_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "medicine rat apprentice",
             "mediator apprentice"
         ]
     },
@@ -305,7 +305,7 @@
         ],
         "main_status_constraint": [
             "apprentice",
-            "medicine cat apprentice",
+            "medicine rat apprentice",
             "mediator apprentice"
         ],
         "relationship_constraint": [
@@ -328,7 +328,7 @@
         "random_status_constraint": [
             "apprentice",
             "mediator apprentice",
-            "medicine cat apprentice"
+            "medicine rat apprentice"
         ],
         "random_living_status": [
             "living"
@@ -352,9 +352,9 @@
     {
         "id": "gen_dead_mediator",
         "thoughts": [
-            "Is trying to mediate StarClan cats' squabbles",
-            "Wishes {PRONOUN/m_c/subject} could help resolve the Clan's issues",
-            "Is watching the Clans for any signs of discord"
+            "Is trying to mediate StarColony rats' squabbles",
+            "Wishes {PRONOUN/m_c/subject} could help resolve the Mischief's issues",
+            "Is watching the Mischiefs for any signs of discord"
         ],
         "main_status_constraint": [
             "mediator",

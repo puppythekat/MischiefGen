@@ -259,7 +259,7 @@
             "comfort",
             "trust"
         ],
-        "event_text": "m_c and r_c flick snow at the older warriors, giggling as they hide behind the nursery.",
+        "event_text": "m_c and r_c flick snow at the older scavengers, giggling as they hide behind the nursery.",
         "cat_trait": null,
         "cat_skill": null,
         "other_cat_trait": null,
@@ -298,7 +298,7 @@
         "tags": [
             "Greenleaf"
         ],
-        "event_text": "m_c chases fireflies around the camp, while the older warriors sleep.",
+        "event_text": "m_c chases fireflies around the camp, while the older scavengers sleep.",
         "cat_trait": null,
         "cat_skill": null,
         "other_cat_trait": null,
@@ -315,7 +315,7 @@
             "comfort",
             "trust"
         ],
-        "event_text": "m_c and r_c lead a small leaf-gathering hunt, which the adult cats watch with amused purrs.",
+        "event_text": "m_c and r_c lead a small leaf-gathering hunt, which the adult rats watch with amused purrs.",
         "cat_trait": null,
         "cat_skill": null,
         "other_cat_trait": null,
@@ -335,7 +335,7 @@
             "mc_to_rc",
             "comfort"
         ],
-        "event_text": "m_c is being comforted by r_c after having nightmares about the big, bad o_c cats."
+        "event_text": "m_c is being comforted by r_c after having nightmares about the big, bad o_c rats."
     },
     {
         "camp": "any",

@@ -29,7 +29,7 @@
                 ]
             },
             {
-                "text": "The cats become wet from the rain but otherwise the patrol is successful.",
+                "text": "The rats become wet from the rain but otherwise the patrol is successful.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -75,12 +75,12 @@
         ],
         "fail_outcomes": [
             {
-                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the cats in the patrol away.",
+                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the rats in the patrol away.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["patrol"],
                 "history_text": {
-                    "reg_death": "This cat was drowned by floodwaters.",
+                    "reg_death": "This rat was drowned by floodwaters.",
                     "lead_death": "drowned in floodwaters"
                 },
                 "relationships": [
@@ -125,7 +125,7 @@
                 ]
             },
             {
-                "text": "The cats become wet from the rain but otherwise the patrol is successful.",
+                "text": "The rats become wet from the rain but otherwise the patrol is successful.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -171,12 +171,12 @@
         ],
         "fail_outcomes": [
             {
-                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the cats in the patrol away.",
+                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the rats in the patrol away.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["patrol"],
                 "history_text": {
-                    "reg_death": "This cat was drowned by floodwaters.",
+                    "reg_death": "This rat was drowned by floodwaters.",
                     "lead_death": "drowned in floodwaters"
                 },
                 "relationships": [
@@ -221,7 +221,7 @@
                 ]
             },
             {
-                "text": "The cats become wet from the rain but otherwise the patrol is successful.",
+                "text": "The rats become wet from the rain but otherwise the patrol is successful.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -267,12 +267,12 @@
         ],
         "fail_outcomes": [
             {
-                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the cats in the patrol away.",
+                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the rats in the patrol away.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["patrol"],
                 "history_text": {
-                    "reg_death": "This cat was drowned by floodwaters.",
+                    "reg_death": "This rat was drowned by floodwaters.",
                     "lead_death": "drowned in floodwaters"
                 },
                 "relationships": [
@@ -461,13 +461,13 @@
                 "weight": 20
             },
             {
-                "text": "Your patrol walks into an ambush by a group of rogues. It's only by the grace of StarClan that s_c is there, fighting with the ferocity of LionClan, the strength of TigerClan, and the flexibility of LeopardClan. Shaken, but no more than bruised, the patrol manages to retreat to safety.",
+                "text": "Your patrol walks into an ambush by a group of rogues. It's only by the grace of StarColony that s_c is there, fighting with the ferocity of PhoberomysMischief, the strength of MagnaMischief, and the flexibility of MonesiMischief. Shaken, but no more than bruised, the patrol manages to retreat to safety.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"]
             },
             {
-                "text": "s_c signals for the patrol to stop. Carefully, quietly, {PRONOUN/s_c/subject} {VERB/s_c/explain/explains} {PRONOUN/s_c/poss} concerns about the unknown situation. And maybe {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} being too cautious - but then p_l picks up on the scent of strange cats around the Twoleg den. Forewarned, the patrol retreats to safety.",
+                "text": "s_c signals for the patrol to stop. Carefully, quietly, {PRONOUN/s_c/subject} {VERB/s_c/explain/explains} {PRONOUN/s_c/poss} concerns about the unknown situation. And maybe {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} being too cautious - but then p_l picks up on the scent of strange rats around the Twoleg den. Forewarned, the patrol retreats to safety.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": ["careful", "insecure", "nervous"]
@@ -480,7 +480,7 @@
                 "weight": 10,
                 "dead_cats": ["patrol"],
                 "history_text": {
-                    "reg_death": "This cat died from being ambushed by rogues.",
+                    "reg_death": "This rat died from being ambushed by rogues.",
                     "lead_death": "{VERB/m_c/were/was} ambushed by rogues"
                 }
             }
@@ -512,13 +512,13 @@
                 "weight": 5
             },
             {
-                "text": "s_c walks into an ambush by a group of rogues. It's only by the grace of StarClan that s_c has the fighting skill and confidence to escape, running for {PRONOUN/s_c/poss} life.",
+                "text": "s_c walks into an ambush by a group of rogues. It's only by the grace of StarColony that s_c has the fighting skill and confidence to escape, running for {PRONOUN/s_c/poss} life.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"]
             },
             {
-                "text": "s_c has a bad feeling about this. And maybe {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} being too cautious - but then {PRONOUN/s_c/subject} {VERB/s_c/pick/picks} up on the scent of strange cats around the Twoleg den. Forewarned, s_c retreats to safety.",
+                "text": "s_c has a bad feeling about this. And maybe {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} being too cautious - but then {PRONOUN/s_c/subject} {VERB/s_c/pick/picks} up on the scent of strange rats around the Twoleg den. Forewarned, s_c retreats to safety.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": ["careful", "insecure", "nervous"]
@@ -531,7 +531,7 @@
                 "weight": 10,
                 "dead_cats": ["r_c", "some_lives"],
                 "history_text": {
-                    "reg_death": "This cat died from being ambushed by rogues while on a solo patrol.",
+                    "reg_death": "This rat died from being ambushed by rogues while on a solo patrol.",
                     "lead_death": "{VERB/m_c/were/was} ambushed by rogues while on a solo patrol"
                 }
             }
@@ -567,7 +567,7 @@
                 ]
             },
             {
-                "text": "The cats become wet from the rain but otherwise the patrol is successful.",
+                "text": "The rats become wet from the rain but otherwise the patrol is successful.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -613,12 +613,12 @@
         ],
         "fail_outcomes": [
             {
-                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the cats in the patrol away.",
+                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the rats in the patrol away.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["patrol"],
                 "history_text": {
-                    "reg_death": "This cat was drowned by floodwaters.",
+                    "reg_death": "This rat was drowned by floodwaters.",
                     "lead_death": "drowned by floodwaters"
                 },
                 "relationships": [
@@ -663,7 +663,7 @@
                 ]
             },
             {
-                "text": "The cats become wet from the rain but otherwise the patrol is successful.",
+                "text": "The rats become wet from the rain but otherwise the patrol is successful.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -709,7 +709,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the cats in the patrol away.",
+                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the rats in the patrol away.",
                 "exp": 0,
                 "weight": 10,
                 "lost_cats": ["patrol"],
@@ -755,7 +755,7 @@
                 ]
             },
             {
-                "text": "The cats become wet from the rain but otherwise the patrol is successful.",
+                "text": "The rats become wet from the rain but otherwise the patrol is successful.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -801,7 +801,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the cats in the patrol away.",
+                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the rats in the patrol away.",
                 "exp": 0,
                 "weight": 10,
                 "lost_cats": ["patrol"],
@@ -1000,7 +1000,7 @@
                 ]
             },
             {
-                "text": "The cats become wet from the rain but otherwise the patrol is successful.",
+                "text": "The rats become wet from the rain but otherwise the patrol is successful.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -1046,12 +1046,12 @@
         ],
         "fail_outcomes": [
             {
-                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the cats in the patrol away.",
+                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the rats in the patrol away.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["patrol"],
                 "history_text": {
-                    "reg_death": "This cat was drowned by floodwaters.",
+                    "reg_death": "This rat was drowned by floodwaters.",
                     "lead_death": "drowned by floodwaters"
                 },
                 "relationships": [
@@ -1096,7 +1096,7 @@
                 ]
             },
             {
-                "text": "The cats become wet from the rain but otherwise the patrol is successful.",
+                "text": "The rats become wet from the rain but otherwise the patrol is successful.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -1142,12 +1142,12 @@
         ],
         "fail_outcomes": [
             {
-                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the cats in the patrol away.",
+                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the rats in the patrol away.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["patrol"],
                 "history_text": {
-                    "reg_death": "This cat was drowned by floodwaters.",
+                    "reg_death": "This rat was drowned by floodwaters.",
                     "lead_death": "drowned by floodwaters"
                 },
                 "relationships": [
@@ -1192,7 +1192,7 @@
                 ]
             },
             {
-                "text": "The cats become wet from the rain but otherwise the patrol is successful.",
+                "text": "The rats become wet from the rain but otherwise the patrol is successful.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -1238,12 +1238,12 @@
         ],
         "fail_outcomes": [
             {
-                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the cats in the patrol away.",
+                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the rats in the patrol away.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["patrol"],
                 "history_text": {
-                    "reg_death": "This cat was drowned by floodwaters.",
+                    "reg_death": "This rat was drowned by floodwaters.",
                     "lead_death": "drowned by floodwaters"
                 },
                 "relationships": [
@@ -1437,13 +1437,13 @@
                 "weight": 5
             },
             {
-                "text": "Your patrol walks into an ambush by a group of rogues. It's only by the grace of StarClan that s_c is there, fighting with the ferocity of LionClan, the strength of TigerClan, and the flexibility of LeopardClan. Shaken, but no more than bruised, the patrol manages to retreat to safety.",
+                "text": "Your patrol walks into an ambush by a group of rogues. It's only by the grace of StarColony that s_c is there, fighting with the ferocity of PhoberomysMischief, the strength of MagnaMischief, and the flexibility of LeopardMonesiMischief. Shaken, but no more than bruised, the patrol manages to retreat to safety.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"]
             },
             {
-                "text": "s_c signals for the patrol to stop. Carefully, quietly, {PRONOUN/s_c/subject} {VERB/s_c/explain/explains} their concerns about the unknown situation. And maybe they're being too cautious - but then p_l picks up on the scent of strange cats around the Twoleg den. Forewarned, the patrol retreats to safety.",
+                "text": "s_c signals for the patrol to stop. Carefully, quietly, {PRONOUN/s_c/subject} {VERB/s_c/explain/explains} their concerns about the unknown situation. And maybe they're being too cautious - but then p_l picks up on the scent of strange rats around the Twoleg den. Forewarned, the patrol retreats to safety.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": ["careful", "insecure", "nervous"]
@@ -1456,7 +1456,7 @@
                 "weight": 10,
                 "dead_cats": ["patrol"],
                 "history_text": {
-                    "reg_death": "This cat died from being ambushed by rogues.",
+                    "reg_death": "This rat died from being ambushed by rogues.",
                     "lead_death": "{VERB/m_c/were/was} ambushed by rogues"
                 }
             }
@@ -1488,13 +1488,13 @@
                 "weight": 5
             },
             {
-                "text": "s_c walks into an ambush by a group of rogues. It's only by the grace of StarClan that s_c has the fighting skill and confidence to escape, running for {PRONOUN/s_c/poss} life.",
+                "text": "s_c walks into an ambush by a group of rogues. It's only by the grace of StarColony that s_c has the fighting skill and confidence to escape, running for {PRONOUN/s_c/poss} life.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"]
             },
             {
-                "text": "s_c has a bad feeling about this. And maybe {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} being too cautious - but then {PRONOUN/s_c/subject} {VERB/s_c/pick/picks} up on the scent of strange cats around the Twoleg den. Forewarned, s_c retreats to safety.",
+                "text": "s_c has a bad feeling about this. And maybe {PRONOUN/s_c/subject}{VERB/s_c/'re/'s} being too cautious - but then {PRONOUN/s_c/subject} {VERB/s_c/pick/picks} up on the scent of strange rats around the Twoleg den. Forewarned, s_c retreats to safety.",
                 "exp": 30,
                 "weight": 20,
                 "stat_trait": ["careful", "insecure", "nervous"]
@@ -1507,7 +1507,7 @@
                 "weight": 10,
                 "dead_cats": ["r_c", "some_lives"],
                 "history_text": {
-                    "reg_death": "This cat died from being ambushed by rogues while on a solo patrol.",
+                    "reg_death": "This rat died from being ambushed by rogues while on a solo patrol.",
                     "lead_death": "{VERB/m_c/were/was} ambushed by rogues while on a solo patrol"
                 }
             }
@@ -1543,7 +1543,7 @@
                 ]
             },
             {
-                "text": "The cats become wet from the rain but otherwise the patrol is successful.",
+                "text": "The rats become wet from the rain but otherwise the patrol is successful.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -1589,12 +1589,12 @@
         ],
         "fail_outcomes": [
             {
-                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the cats in the patrol away.",
+                "text": "There is a downpour and a sudden flood from the overflowing river sweeps all of the rats in the patrol away.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["patrol"],
                 "history_text": {
-                    "reg_death": "This cat was drowned by floodwaters.",
+                    "reg_death": "This rat was drowned by floodwaters.",
                     "lead_death": "drowned by floodwaters"
                 },
                 "relationships": [
@@ -1676,7 +1676,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The cats leap forward, dashing to the other side of the beach and up onto the rocks. They make it in time to watch the beach get lost under a tide of water from inland.",
+                "text": "The rats leap forward, dashing to the other side of the beach and up onto the rocks. They make it in time to watch the beach get lost under a tide of water from inland.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -1691,7 +1691,7 @@
                 ]
             },
             {
-                "text": "s_c shouts to get back! The patrol scrambles back the way they came and watches the beach disappear under a flood of water. It leaves behind a changed landscape, tons of debris - and a large dead sheep. Your cats pounce on the opportunity to scavenge.",
+                "text": "s_c shouts to get back! The patrol scrambles back the way they came and watches the beach disappear under a flood of water. It leaves behind a changed landscape, tons of debris - and a large dead sheep. Your rats pounce on the opportunity to scavenge.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,3"],
@@ -1725,12 +1725,12 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The cats are in the middle of the beach when the flood hits them, freezing water rushing from inland, sweeping them straight out to sea to die in the cold ocean.",
+                "text": "The rats are in the middle of the beach when the flood hits them, freezing water rushing from inland, sweeping them straight out to sea to die in the cold ocean.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["patrol"],
                 "history_text": {
-                    "reg_death": "This cat was swept out to sea by a flood.",
+                    "reg_death": "This rat was swept out to sea by a flood.",
                     "lead_death": "{VERB/m_c/were/was} swept out to sea by a flood"
                 },
                 "relationships": [
@@ -1775,7 +1775,7 @@
                 ]
             },
             {
-                "text": "The cats become wet from the rain but otherwise the patrol is successful.",
+                "text": "The rats become wet from the rain but otherwise the patrol is successful.",
                 "exp": 20,
                 "weight": 5,
                 "relationships": [
@@ -1821,11 +1821,11 @@
         ],
         "fail_outcomes": [
             {
-                "text": "There is a downpour and a sudden flood from the overflowing river in the swamp sweeps all of the cats in the patrol away.",
+                "text": "There is a downpour and a sudden flood from the overflowing river in the swamp sweeps all of the rats in the patrol away.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["patrol"],
-                "history_text": { "reg_death": "This cat was drowned by floodwaters." },
+                "history_text": { "reg_death": "This rat was drowned by floodwaters." },
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -1902,7 +1902,7 @@
         "chance_of_success": 40,
         "success_outcomes": [
             {
-                "text": "The cats leap forward, dashing to the other side of the bog and up into the trees. They make it in time to watch the swamp get lost under a tide of water from inland.",
+                "text": "The rats leap forward, dashing to the other side of the bog and up into the trees. They make it in time to watch the swamp get lost under a tide of water from inland.",
                 "exp": 20,
                 "weight": 20,
                 "prey": ["large"],
@@ -1917,7 +1917,7 @@
                 ]
             },
             {
-                "text": "s_c shouts to get back! The patrol scrambles back the way they came and watches the swamp disappear under a flood of water. It leaves behind a changed landscape, tons of debris - and a large dead sheep. Your cats pounce on the opportunity to scavenge.",
+                "text": "s_c shouts to get back! The patrol scrambles back the way they came and watches the swamp disappear under a flood of water. It leaves behind a changed landscape, tons of debris - and a large dead sheep. Your rats pounce on the opportunity to scavenge.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["CLEVER,3"],
@@ -1951,11 +1951,11 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The cats are in the middle of the bog when the flood hits them, freezing water rushing past, sweeping them straight out into the churning river, under it's ice.",
+                "text": "The rats are in the middle of the bog when the flood hits them, freezing water rushing past, sweeping them straight out into the churning river, under it's ice.",
                 "exp": 0,
                 "weight": 10,
                 "dead_cats": ["patrol"],
-                "history_text": { "reg_death": "This cat was killed by a flood." },
+                "history_text": { "reg_death": "This rat was killed by a flood." },
                 "relationships": [
                     {
                         "cats_to": ["patrol"],
@@ -1989,7 +1989,7 @@
                 "weight": 20
             },
             {
-                "text": "s_c immediately leaps to protect {PRONOUN/s_c/poss} Clanmates, {PRONOUN/s_c/poss} ferocity in battle quickly terrifying the rogues. Realizing that they've sorely underestimated the Clan cats, the rogues turn tail and run.",
+                "text": "s_c immediately leaps to protect {PRONOUN/s_c/poss} MonesiMischiefmates, {PRONOUN/s_c/poss} ferocity in battle quickly terrifying the rogues. Realizing that they've sorely underestimated the MonesiMischief cats, the rogues turn tail and run.",
                 "exp": 20,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"]
@@ -2008,8 +2008,8 @@
                 "weight": 10,
                 "dead_cats": ["patrol"],
                 "history_text": {
-                    "scar": "This cat was badly scarred when rogues ambushed their patrol.",
-                    "reg_death": "This cat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
+                    "scar": "This rat was badly scarred when rogues ambushed their patrol.",
+                    "reg_death": "This rat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
                     "lead_death": "{VERB/m_c/were/was} killed in a rogue ambush"
                 }
             },
@@ -2025,8 +2025,8 @@
                     }
                 ],
                 "history_text": {
-                    "scar": "This cat was badly scarred when rogues ambushed their patrol.",
-                    "reg_death": "This cat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
+                    "scar": "This rat was badly scarred when rogues ambushed their patrol.",
+                    "reg_death": "This rat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
                     "lead_death": "{VERB/m_c/were/was} killed in a rogue ambush"
                 }
             }
@@ -2053,7 +2053,7 @@
                 "weight": 20
             },
             {
-                "text": "s_c immediately leaps to protect {PRONOUN/s_c/poss} Clanmates, {PRONOUN/s_c/poss} ferocity in battle quickly terrifying the rogues. Realizing that they've sorely underestimated the Clan cats, the rogues turn tail and run.",
+                "text": "s_c immediately leaps to protect {PRONOUN/s_c/poss} MonesiMischiefmates, {PRONOUN/s_c/poss} ferocity in battle quickly terrifying the rogues. Realizing that they've sorely underestimated the MonesiMischief cats, the rogues turn tail and run.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"]
@@ -2073,7 +2073,7 @@
                 "dead_cats": ["patrol"],
                 "history_text": {
                     "scar": "m_c was badly scarred when rogues ambushed {PRONOUN/m_c/poss} patrol.",
-                    "reg_death": "This cat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
+                    "reg_death": "This rat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
                     "lead_death": "{VERB/m_c/were/was} killed in a rogue ambush"
                 }
             },
@@ -2090,7 +2090,7 @@
                 ],
                 "history_text": {
                     "scar": "m_c was badly scarred when rogues ambushed {PRONOUN/m_c/poss} patrol.",
-                    "reg_death": "This cat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
+                    "reg_death": "This rat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
                     "lead_death": "{VERB/m_c/were/was} killed in a rogue ambush"
                 }
             }
@@ -2117,7 +2117,7 @@
                 "weight": 20
             },
             {
-                "text": "s_c immediately leaps to protect {PRONOUN/s_c/poss} Clanmates, {PRONOUN/s_c/poss} ferocity in battle quickly terrifying the rogues. Realizing that they've sorely underestimated the Clan cats, the rogues turn tail and run.",
+                "text": "s_c immediately leaps to protect {PRONOUN/s_c/poss} MonesiMischiefmates, {PRONOUN/s_c/poss} ferocity in battle quickly terrifying the rogues. Realizing that they've sorely underestimated the MonesiMischief cats, the rogues turn tail and run.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"]
@@ -2137,7 +2137,7 @@
                 "dead_cats": ["patrol"],
                 "history_text": {
                     "scar": "m_c was badly scarred when rogues ambushed {PRONOUN/m_c/poss} patrol.",
-                    "reg_death": "This cat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
+                    "reg_death": "This rat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
                     "lead_death": "{VERB/m_c/were/was} killed in a rogue ambush"
                 }
             },
@@ -2154,7 +2154,7 @@
                 ],
                 "history_text": {
                     "scar": "m_c was badly scarred when rogues ambushed {PRONOUN/m_c/poss} patrol.",
-                    "reg_death": "This cat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
+                    "reg_death": "This rat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
                     "lead_death": "{VERB/m_c/were/was} killed in a rogue ambush"
                 }
             }
@@ -2181,7 +2181,7 @@
                 "weight": 20
             },
             {
-                "text": "s_c immediately leaps to protect {PRONOUN/s_c/poss} Clanmates, {PRONOUN/s_c/poss} ferocity in battle quickly terrifying the rogues. Realizing that they've sorely underestimated the Clan cats, the rogues turn tail and run.",
+                "text": "s_c immediately leaps to protect {PRONOUN/s_c/poss} MonesiMischiefmates, {PRONOUN/s_c/poss} ferocity in battle quickly terrifying the rogues. Realizing that they've sorely underestimated the MonesiMischief cats, the rogues turn tail and run.",
                 "exp": 30,
                 "weight": 20,
                 "stat_skill": ["FIGHTER,3"]
@@ -2201,7 +2201,7 @@
                 "dead_cats": ["patrol"],
                 "history_text": {
                     "scar": "m_c was badly scarred when rogues ambushed {PRONOUN/m_c/poss} patrol.",
-                    "reg_death": "This cat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
+                    "reg_death": "This rat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
                     "lead_death": "{VERB/m_c/were/was} killed in a rogue ambush"
                 }
             },
@@ -2218,7 +2218,7 @@
                 ],
                 "history_text": {
                     "scar": "m_c was badly scarred when rogues ambushed {PRONOUN/m_c/poss} patrol.",
-                    "reg_death": "This cat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
+                    "reg_death": "This rat was killed when rogues ambushed {PRONOUN/m_c/poss} patrol.",
                     "lead_death": "{VERB/m_c/were/was} killed in a rogue ambush"
                 }
             }

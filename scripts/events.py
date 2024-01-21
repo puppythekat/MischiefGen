@@ -96,7 +96,7 @@ class Events:
             self.get_moon_freshkill()
 			# make a notification if the Clan has not enough prey
             if FRESHKILL_EVENT_ACTIVE and not game.clan.freshkill_pile.clan_has_enough_food():
-                event_string = f"{game.clan.name}Clan doesn't have enough prey for next moon!"
+                event_string = f"{game.clan.name}Mischief doesn't have enough food for next moon!"
                 game.cur_events_list.insert(0, Single_Event(event_string))
                 game.freshkill_event_list.append(event_string)
 
@@ -149,8 +149,8 @@ class Events:
             insert = adjust_list_text(ghost_names)
 
             if len(Cat.dead_cats) > 1 and game.clan.game_mode != 'classic':
-                event = f"The past moon, {insert} have taken their place in StarClan. {game.clan.name}Clan mourns their " \
-                        f"loss, and their Clanmates will miss where they had been in their lives. Moments of their " \
+                event = f"The past moon, {insert} have taken their place in StarColony. {game.clan.name}Mischief mourns their " \
+                        f"loss, and their Mischiefmates will miss where they had been in their lives. Moments of their " \
                         f"lives are shared in stories around the circle of mourners as those that were closest to them " \
                         f"take them to their final resting place."
 
@@ -175,13 +175,13 @@ class Events:
                     insert = adjust_list_text(shaken_cat_names)
 
                     if len(shaken_cats) == 1:
-                        extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} is particularly shaken by it."
+                        extra_event = f"So much grief and death has taken its toll on the rats of {game.clan.name}Mischief. {insert} is particularly shaken by it."
                     else:
-                        extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} are particularly shaken by it. "
+                        extra_event = f"So much grief and death has taken its toll on the rats of {game.clan.name}Mischief. {insert} are particularly shaken by it. "
 
             else:
-                event = f"The past moon, {insert} has taken their place in StarClan. {game.clan.name}Clan mourns their " \
-                        f"loss, and their Clanmates will miss the spot they took up in their lives. Moments of their " \
+                event = f"The past moon, {insert} has taken their place in StarColony. {game.clan.name}Mischief mourns their " \
+                        f"loss, and their Mischiefmates will miss the spot they took up in their lives. Moments of their " \
                         f"life are shared in stories around the circle of mourners as those that were closest to them " \
                         f"take them to their final resting place."
 
@@ -202,7 +202,7 @@ class Events:
             med_fullfilled = medical_cats_condition_fulfilled(
                 Cat.all_cats.values(), amount_per_med)
             if not med_fullfilled:
-                string = f"{game.clan.name}Clan does not have enough healthy medicine cats! Cats will be sick/hurt " \
+                string = f"{game.clan.name}Mischief does not have enough healthy medicine rats! Rats will be sick/hurt " \
                          f"for longer and have a higher chance of dying. "
                 game.cur_events_list.insert(0, Single_Event(string, "health"))
         else:
@@ -211,7 +211,7 @@ class Events:
                 and not cat.dead and not cat.outside
                 for cat in Cat.all_cats.values())
             if not has_med:
-                string = f"{game.clan.name}Clan has no medicine cat!"
+                string = f"{game.clan.name}Mischief has no medicine rat!"
                 game.cur_events_list.insert(0, Single_Event(string, "health"))
         
         # Clear the list of cats that died this moon.
@@ -272,8 +272,8 @@ class Events:
                 game.cur_events_list.append(
                     Single_Event(
                         f"{cat.name} had chosen to use their skills and experience to help "
-                        f"solve the Clan's disagreements. A meeting is called, and they "
-                        f"become the Clan's newest mediator. ", "ceremony",
+                        f"solve the Mischief's disagreements. A meeting is called, and they "
+                        f"become the Mischief's newest mediator. ", "ceremony",
                         cat.ID))
                 cat.status_change("mediator")
 
@@ -288,14 +288,14 @@ class Events:
 
         prey_amount = 0
         for cat in healthy_hunter:
-            lower_value = game.prey_config["auto_warrior_prey"][0]
+            lower_value = game.prey_config["auto_warrior_prey"][0]                                                       
             upper_value = game.prey_config["auto_warrior_prey"][1]
             if cat.status == "apprentice":
                 lower_value = game.prey_config["auto_apprentice_prey"][0]
                 upper_value = game.prey_config["auto_apprentice_prey"][1]
 
             prey_amount += random.randint(lower_value, upper_value)
-        game.freshkill_event_list.append(f"The clan managed to catch {prey_amount} pieces of prey in this moon.")
+        game.freshkill_event_list.append(f"The Mischief managed to gather {prey_amount} pieces of food in this moon.")
         game.clan.freshkill_pile.add_freshkill(prey_amount)
 
     def herb_gather(self):
@@ -442,10 +442,10 @@ class Events:
                 # If you have no herbs, you can't give any to a clan. Special events for that.
                 possible_events = [
                     # pylint: disable=line-too-long
-                    f"The {chosen_ally.name}Clan medicine cat comes asking if your Clan has any herbs to spare. "
+                    f"The {chosen_ally.name}Mischief medicine rat comes asking if your Mischief has any herbs to spare. "
                     f"Unfortunately, your stocks are bare, and you are unable to provide any help. ",
-                    f"A medicine cat from {chosen_ally.name}Clan comes comes to your Clan, asking for herbs "
-                    f"to heal their sick Clanmates. Your Clan quickly shoos them away, not willing to "
+                    f"A medicine rat from {chosen_ally.name}Mischief comes comes to your Mischief, asking for herbs "
+                    f"to heal their sick Mischiefmates. Your Mischief quickly shoos them away, not willing to "
                     f"admit that they don't have a single herb in their stores. "
                 ]
                 # pylint: enable=line-too-long
@@ -456,7 +456,7 @@ class Events:
                 # Failsafe, since I have no idea why we are getting 0-herb entries.
                 while game.clan.herbs[herb_given] <= 0:
                     print(
-                        f"Warning: {herb_given} was chosen to give to another clan, "
+                        f"Warning: {herb_given} was chosen to give to another Mischief, "
                         f"although you currently have {game.clan.herbs[herb_given]}. "
                         f"Removing {herb_given} from herb dict, finding a new herb..."
                     )
@@ -475,45 +475,45 @@ class Events:
                     # deplete the herb
                     game.clan.herbs[herb_given] -= herb_amount
                     possible_events = [
-                        f"The {chosen_ally.name}Clan medicine cat comes asking if your Clan has any {herb_given.replace('_', ' ')} to spare. "  # pylint: disable=line-too-long
-                        f"Graciously, your Clan decides to aid their allies and share the herbs.",
-                        f"The medicine cat apprentice from {chosen_ally.name}Clan comes asking for {herb_given.replace('_', ' ')}. "  # pylint: disable=line-too-long
-                        f"They refuse to say why their Clan needs them but your Clan still provides them with {herb_given.replace('_', ' ')}."
+                        f"The {chosen_ally.name}Mischief medicine rat comes asking if your Mischief has any {herb_given.replace('_', ' ')} to spare. "  # pylint: disable=line-too-long
+                        f"Graciously, your Mischief decides to aid their allies and share the herbs.",
+                        f"The medicine rat apprentice from {chosen_ally.name}Mischief comes asking for {herb_given.replace('_', ' ')}. "  # pylint: disable=line-too-long
+                        f"They refuse to say why their Mischief needs them but your Mischief still provides them with {herb_given.replace('_', ' ')}."
                         # pylint: disable=line-too-long
                     ]
                     if herb_given == 'lungwort':
                         possible_events.extend([
-                            f"The {chosen_ally.name}Clan medicine cat apprentice comes to your camp, pleading for help "  # pylint: disable=line-too-long
-                            f"with a yellowcough epidemic. Your Clan provides the cat with some of their extra lungwort.",
+                            f"The {chosen_ally.name}Mischief medicine rat apprentice comes to your camp, pleading for help "  # pylint: disable=line-too-long
+                            f"with a yellowcough epidemic. Your Mischief provides the rat with some of their extra lungwort.",
                             # pylint: disable=line-too-long
-                            f"A medicine cat from {chosen_ally.name}Clan comes to your Clan, asking for lungwort to heal a "  # pylint: disable=line-too-long
-                            f"case of yellowcough. Your Clan has some extra, and so decides to share with their allies."
+                            f"A medicine rat from {chosen_ally.name}Mischief comes to your Mischief, asking for lungwort to heal a "  # pylint: disable=line-too-long
+                            f"case of yellowcough. Your Mischief has some extra, and so decides to share with their allies."
                             # pylint: disable=line-too-long
                         ])
                     chosen_ally.relations += 5
                 else:
                     possible_events = [
-                        f"The {chosen_ally.name}Clan medicine cat comes asking if your Clan has any {herb_given.replace('_', ' ')} to spare. "  # pylint: disable=line-too-long
-                        f"However, your Clan only has enough for themselves and they refuse to share.",
+                        f"The {chosen_ally.name}Mischief medicine rat comes asking if your Mischief has any {herb_given.replace('_', ' ')} to spare. "  # pylint: disable=line-too-long
+                        f"However, your Mischief only has enough for themselves and they refuse to share.",
                         # pylint: disable=line-too-long
-                        f"The medicine cat apprentice from {chosen_ally.name}Clan comes asking for herbs. They refuse to "  # pylint: disable=line-too-long
-                        f"say why their Clan needs them and your Clan decides not to share their precious few {herb_given.replace('_', ' ')}."
+                        f"The medicine rat apprentice from {chosen_ally.name}Mischief comes asking for herbs. They refuse to "  # pylint: disable=line-too-long
+                        f"say why their Mischief needs them and your Mischief decides not to share their precious few {herb_given.replace('_', ' ')}."
                         # pylint: disable=line-too-long
                     ]
                     if herb_given == 'lungwort':
                         possible_events.extend([
-                            f"The {chosen_ally.name}Clan medicine cat apprentice comes to your camp, pleading for help with"  # pylint: disable=line-too-long
-                            f" a yellowcough epidemic. Your Clan can't spare the precious herb however, and turns them away.",
+                            f"The {chosen_ally.name}Mischief medicine rat apprentice comes to your camp, pleading for help with"  # pylint: disable=line-too-long
+                            f" a yellowcough epidemic. Your Mischief can't spare the precious herb however, and turns them away.",
                             # pylint: disable=line-too-long
-                            f"A medicine cat from {chosen_ally.name}Clan comes to your Clan, asking for lungwort to heal "  # pylint: disable=line-too-long
-                            f"a case of yellowcough. However, your Clan has no extra lungwort to give."
+                            f"A medicine rat from {chosen_ally.name}Mischief comes to your Mischief, asking for lungwort to heal "  # pylint: disable=line-too-long
+                            f"a case of yellowcough. However, your Mischief has no extra lungwort to give."
                             # pylint: disable=line-too-long
                         ])
                     chosen_ally.relations -= 5
             event = random.choice(possible_events)
             game.herb_events_list.append(event)
             event_type = "health"
-            if f"{chosen_ally.name}Clan" in event:
+            if f"{chosen_ally.name}Mischief" in event:
                 event_type = ["health", "other_clans"]
             game.cur_events_list.append(Single_Event(event, event_type))
 
@@ -553,7 +553,7 @@ class Events:
             ])
             if game.clan.current_season == 'Leaf-bare':
                 possible_events.extend([
-                    "Freezing temperatures have not just affected the cats. It's also frostbitten the stored herbs. "  # pylint: disable=line-too-long
+                    "Freezing temperatures have not just affected the rats. It's also frostbitten the stored herbs. "  # pylint: disable=line-too-long
                     "They're useless now and will have to be replaced.",
                 ])
             elif game.clan.current_season == 'Newleaf':
@@ -925,7 +925,7 @@ class Events:
                     war_events.remove(event)
 
         event = random.choice(war_events)
-        event = ongoing_event_text_adjust(Cat, event, other_clan_name=f"{enemy_clan.name}Clan", clan=game.clan)
+        event = ongoing_event_text_adjust(Cat, event, other_clan_name=f"{enemy_clan.name}Mischief", clan=game.clan)
         game.cur_events_list.append(
             Single_Event(event, "other_clans"))
 
@@ -955,32 +955,32 @@ class Events:
                 text = ''
                 if game.clan.deputy.personality.trait == 'bloodthirsty':
                     text = f'{game.clan.deputy.name} has become the new leader. ' \
-                           f'They stare down at their Clanmates with unsheathed claws, ' \
-                           f'promising a new era for the Clans.'
+                           f'They stare down at their Mischiefmates with unsheathed claws, ' \
+                           f'promising a new era for the Mischiefs.'
                 else:
                     c = random.choice([1, 2, 3])
                     if c == 1:
                         text = str(game.clan.deputy.name.prefix) + str(
                             game.clan.deputy.name.suffix) + \
-                               ' has been promoted to the new leader of the Clan. ' \
+                               ' has been promoted to the new king of the Mischief. ' \
                                'They travel immediately to the Moonstone to get their ' \
                                'nine lives and are hailed by their new name, ' + \
                                str(game.clan.deputy.name) + '.'
                     elif c == 2:
-                        text = f'{game.clan.deputy.name} has become the new leader of the Clan. ' \
-                               f'They vow that they will protect the Clan, ' \
+                        text = f'{game.clan.deputy.name} has become the new king of the Mischief. ' \
+                               f'They vow that they will protect the Mischief, ' \
                                f'even at the cost of their nine lives.'
                     elif c == 3:
                         text = f'{game.clan.deputy.name} has received ' \
                                f'their nine lives and became the ' \
-                               f'new leader of the Clan. They feel like ' \
+                               f'new king of the Mischief. They feel like ' \
                                f'they are not ready for this new ' \
                                f'responsibility, but will try their best ' \
-                               f'to do what is right for the Clan.'
+                               f'to do what is right for the Mischief.'
 
                 # game.ceremony_events_list.append(text)
                 text += f"\nVisit {game.clan.deputy.name}'s " \
-                        "profile to see their full leader ceremony."
+                        "profile to see their full crowning ceremony."
 
                 game.cur_events_list.append(
                     Single_Event(text, "ceremony", game.clan.deputy.ID))
@@ -1886,7 +1886,7 @@ class Events:
             for poor_little_meowmeow in dead_cats:
                 poor_little_meowmeow.die()
                 # this next bit is temporary until we can rework it
-                History.add_death(poor_little_meowmeow, 'This cat died after disaster struck the Clan.')
+                History.add_death(poor_little_meowmeow, 'This rat died after disaster struck the Mischief.')
 
     def handle_illnesses_or_illness_deaths(self, cat):
         """ 
@@ -2045,9 +2045,9 @@ class Events:
                 # cat.pronouns = [cat.default_pronouns[0].copy()]
 
             if cat.gender == 'male':
-                gender = 'tom'
+                gender = 'buck'
             else:
-                gender = 'she-cat'
+                gender = 'doe'
             text = f"{cat.name} has realized that {gender} doesn't describe how they feel anymore."
             game.cur_events_list.append(
                 Single_Event(text, "misc", involved_cats))
@@ -2075,7 +2075,7 @@ class Events:
 
             if leader_dead or leader_outside:
                 game.cur_events_list.insert(
-                    0, Single_Event(f"{game.clan.name}Clan has no leader!"))
+                    0, Single_Event(f"{game.clan.name}Mischief has no king!"))
 
     def check_and_promote_deputy(self):
         """Checks if a new deputy needs to be appointed, and appointed them if needed. """
@@ -2116,7 +2116,7 @@ class Events:
 
                         if random_cat.personality.trait == 'bloodthirsty':
                             text = f"{random_cat.name} has been chosen as the new deputy. " \
-                                   f"They look at the Clan leader with an odd glint in their eyes."
+                                   f"They look at the Mischief king with an odd glint in their eyes."
                             # No additional involved cats
                         else:
                             if game.clan.deputy:
@@ -2137,32 +2137,32 @@ class Events:
 
                             involved_cats.append(game.clan.leader.ID)
                     elif leader_status == "not_here" and deputy_status == "here":
-                        text = f"The Clan is without a leader, but a " \
+                        text = f"The Mischief is without a king, but a " \
                                f"new deputy must still be named.  " \
                                f"{random_cat.name} is chosen as the new deputy. " \
                                f"The retired deputy nods their approval."
                     elif leader_status == "not_here" and deputy_status == "not_here":
-                        text = f"Without a leader or deputy, the Clan has been directionless. " \
+                        text = f"Without a king or deputy, the Mischief has been directionless. " \
                                f"They all turn to {random_cat.name} with hope for the future."
                     elif leader_status == "here" and deputy_status == "here":
                         possible_events = [
                             f"{random_cat.name} has been chosen as the new deputy. "  # pylint: disable=line-too-long
-                            f"The Clan yowls their name in approval.",  # pylint: disable=line-too-long
+                            f"The Mischief yowls their name in approval.",  # pylint: disable=line-too-long
                             f"{random_cat.name} has been chosen as the new deputy. "  # pylint: disable=line-too-long
-                            f"Some of the older Clan members question the wisdom in this choice.",
+                            f"Some of the older Mischief members question the wisdom in this choice.",
                             # pylint: disable=line-too-long
                             f"{random_cat.name} has been chosen as the new deputy. "  # pylint: disable=line-too-long
-                            f"They hold their head up high and promise to do their best for the Clan.",
+                            f"They hold their head up high and promise to do their best for the Mischief.",
                             # pylint: disable=line-too-long
                             f"{game.clan.leader.name} has been thinking deeply all day who they would "  # pylint: disable=line-too-long
                             f"respect and trust enough to stand at their side, and at sunhigh makes the "  # pylint: disable=line-too-long
-                            f"announcement that {random_cat.name} will be the Clan's new deputy.",
+                            f"announcement that {random_cat.name} will be the Mischief's new deputy.",
                             # pylint: disable=line-too-long
                             f"{random_cat.name} has been chosen as the new deputy. They pray to "  # pylint: disable=line-too-long
-                            f"StarClan that they are the right choice for the Clan.",  # pylint: disable=line-too-long
+                            f"StarColony that they are the right choice for the Mischief.",  # pylint: disable=line-too-long
                             f"{random_cat.name} has been chosen as the new deputy. Although"  # pylint: disable=line-too-long
                             f"they are nervous, they put on a brave front and look forward to serving"  # pylint: disable=line-too-long
-                            f"the clan.",
+                            f"the Mischief.",
                         ]
                         # No additional involved cats
                         text = random.choice(possible_events)
@@ -2178,7 +2178,7 @@ class Events:
                     if all_warriors:
                         random_cat = random.choice(all_warriors)
                         involved_cats = [random_cat.ID]
-                        text = f"No cat is truly fit to be deputy, " \
+                        text = f"No rat is truly fit to be deputy, " \
                                f"but the position can't remain vacant. " \
                                f"{random_cat.name} is appointed as the new deputy. "
 
@@ -2186,7 +2186,7 @@ class Events:
                         # Is there are no warriors at all, no one is named deputy.
                         game.cur_events_list.append(
                             Single_Event(
-                                "There are no cats fit to become deputy. ",
+                                "There are no rats fit to become deputy. ",
                                 "ceremony"))
                         return
 
@@ -2198,6 +2198,6 @@ class Events:
 
             else:
                 game.cur_events_list.insert(
-                    0, Single_Event(f"{game.clan.name}Clan has no deputy!"))
+                    0, Single_Event(f"{game.clan.name}Mischief has no deputy!"))
 
 events_class = Events()

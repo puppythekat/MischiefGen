@@ -103,13 +103,13 @@
 		"interactions": [
 			"m_c imagines what {PRONOUN/m_c/poss} family with r_c would look like.",
 			"m_c would spend the entire day with r_c if {PRONOUN/m_c/subject} could.",
-			"m_c keeps shyly glancing over at r_c as the Clan talks about mates",
+			"m_c keeps shyly glancing over at r_c as the Mischief talks about mates",
 			"m_c doesn't want r_c to overwork {PRONOUN/r_c/self}.",
 			"m_c catches {PRONOUN/m_c/self} staring at r_c a bit too often.",
 			"m_c gets flustered when r_c compliments {PRONOUN/m_c/poss} skill.",
 			"m_c feels {PRONOUN/m_c/poss} jaw drop when the sun catches just right on r_c's pelt.",
 			"m_c immediately thinks of r_c when the topic of mates is brought up.",
-			"m_c is nervous sitting next to r_c at the Clan meeting."
+			"m_c is nervous sitting next to r_c at the Mischief meeting."
 		],
 		"relationship_constraint": [
 			"romantic_20",
@@ -151,7 +151,7 @@
 		"id": "rom_inc_medium4",
 		"intensity": "medium",
 		"interactions": [
-			"m_c thinks r_c is the most beautiful cat in the Clan.",
+			"m_c thinks r_c is the most beautiful rat in the Mischief.",
 			"m_c can't stop thinking about r_c.",
 			"m_c feels giddy about getting on the same patrol as r_c.",
 			"m_c wants r_c to understand how crazy {PRONOUN/m_c/subject} {VERB/m_c/are/is} about {PRONOUN/r_c/object}.",
@@ -214,7 +214,7 @@
 			"m_c is rolling around a little too playfully with r_c...",
 			"m_c could spend hours listening to r_c's voice.",
 			"m_c hopes to dream of r_c tonight.",
-			"m_c is the only cat who can make r_c laugh."
+			"m_c is the only rat who can make r_c laugh."
 		],
 		"relationship_constraint": [
 			"romantic_40"

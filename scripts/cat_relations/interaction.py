@@ -29,7 +29,7 @@ class Single_Interaction():
         if interactions:
             self.interactions = interactions
         else:
-            self.interactions = [f"This is a default interaction! ID: {id} with cats (m_c), (r_c)"]
+            self.interactions = [f"This is a default interaction! ID: {id} with rats (m_c), (r_c)"]
 
         if get_injuries:
             self.get_injuries = get_injuries
@@ -119,7 +119,7 @@ class Group_Interaction():
         if interactions:
             self.interactions = interactions
         else:
-            self.interactions = [f"This is a default interaction! ID: {id} with cats (m_c), (r_c)"]
+            self.interactions = [f"This is a default interaction! ID: {id} with rats (m_c), (r_c)"]
 
         if get_injuries:
             self.get_injuries = get_injuries

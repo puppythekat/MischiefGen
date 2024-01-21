@@ -22,7 +22,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c was play-fighting with the kits, but may have overdone it a bit. {PRONOUN/m_c/subject/CAP}'ll be sore for the next few days.",
+        "event_text": "m_c was play-fighting with the pinkies, but may have overdone it a bit. {PRONOUN/m_c/subject/CAP}'ll be sore for the next few days.",
         "cat_trait": null,
         "cat_skill": [
             "KIT,1"
@@ -39,7 +39,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c was play-fighting with the kits, but may have overdone it a bit. {PRONOUN/m_c/subject/CAP}'ll be sore for the next few days.",
+        "event_text": "m_c was play-fighting with the pinkies, but may have overdone it a bit. {PRONOUN/m_c/subject/CAP}'ll be sore for the next few days.",
         "cat_trait": null,
         "cat_skill": [
             "KIT,1"
@@ -197,7 +197,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c keeps pointedly reminding other cats that {PRONOUN/m_c/poss} ticks haven't been seen to yet, clearly uncomfortable with the itchy bites dotting {PRONOUN/m_c/poss} pelt.",
+        "event_text": "m_c keeps pointedly reminding other rats that {PRONOUN/m_c/poss} ticks haven't been seen to yet, clearly uncomfortable with the itchy bites dotting {PRONOUN/m_c/poss} pelt.",
         "cat_trait": [
             "cold",
             "fierce",
@@ -251,7 +251,7 @@
             "scar",
             "CHEEK"
         ],
-        "event_text": "m_c tried to interject and de-escalate an argument between two Clanmates, but r_c retaliated at the interruption.  m_c limps away, fresh clawmarks scored through {PRONOUN/m_c/poss} pelt.",
+        "event_text": "m_c tried to interject and de-escalate an argument between two Mischiefmates, but r_c retaliated at the interruption.  m_c limps away, fresh clawmarks scored through {PRONOUN/m_c/poss} pelt.",
         "history_text": {
             "scar": "m_c was scarred by r_c.",
             "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after r_c hurt {PRONOUN/m_c/object} for trying to stop an argument."
@@ -300,10 +300,10 @@
             "scar",
             "ONE"
         ],
-        "event_text": "m_c was on a walk when {PRONOUN/m_c/subject} saw r_c being attacked by an enemy warrior! {PRONOUN/m_c/subject/CAP} helped r_c escape, but not before gaining a few wounds.",
+        "event_text": "m_c was on a walk when {PRONOUN/m_c/subject} saw r_c being attacked by an enemy scavenger! {PRONOUN/m_c/subject/CAP} helped r_c escape, but not before gaining a few wounds.",
         "history_text": {
-            "scar": "m_c was scarred while trying to save r_c from an enemy warrior.",
-            "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after trying to save r_c from an enemy warrior."
+            "scar": "m_c was scarred while trying to save r_c from an enemy scavenger.",
+            "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after trying to save r_c from an enemy scavenger."
         },
         "cat_trait": [
             "altruistic",

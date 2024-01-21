@@ -122,9 +122,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c failed to interpret a warning sign from StarClan, and lost a life as a result.",
+        "death_text": "m_c failed to interpret a warning sign from StarColony, and lost a life as a result.",
         "history_text": {
-            "lead_death": "failed to interpret a warning from StarClan"
+            "lead_death": "failed to interpret a warning from StarColony"
         },
         "cat_negate_skill": [
             "CLEVER,2",
@@ -359,9 +359,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c lost a life defending the kits from o_c warriors.",
+        "death_text": "m_c lost a life defending the pinkies from o_c scavengers.",
         "history_text": {
-            "lead_death": "defended the kits from o_c warriors"
+            "lead_death": "defended the pinkies from o_c scavengers"
         },
         "cat_trait": [
             "altruistic",
@@ -402,9 +402,9 @@
             "neg_dislike",
             "comfort"
         ],
-        "death_text": "m_c lost a life defending r_c from o_c warriors.",
+        "death_text": "m_c lost a life defending r_c from o_c scavengers.",
         "history_text": {
-            "lead_death": "defended r_c from o_c warriors"
+            "lead_death": "defended r_c from o_c scavengers"
         },
         "cat_trait": [
             "altruistic",
@@ -491,9 +491,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c lost a life to a warrior from o_c.",
+        "death_text": "m_c lost a life to a scavenger from o_c.",
         "history_text": {
-            "lead_death": "fought a warrior from o_c"
+            "lead_death": "fought a scavenger from o_c"
         },
         "cat_negate_skill": [
             "FIGHTER,2"
@@ -511,9 +511,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c lost a life trying to save a warrior from o_c.",
+        "death_text": "m_c lost a life trying to save a scavenger from o_c.",
         "history_text": {
-            "lead_death": "saved a warrior from o_c"
+            "lead_death": "saved a scavenger from o_c"
         },
         "cat_trait": [
             "altruistic",
@@ -544,9 +544,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c lost a life to the leader of o_c.",
+        "death_text": "m_c lost a life to the king of o_c.",
         "history_text": {
-            "lead_death": "fought the o_c leader"
+            "lead_death": "fought the o_c king"
         },
         "cat_negate_skill": [
             "FIGHTER,3"
@@ -564,9 +564,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c lost a life trying to save the leader of o_c.",
+        "death_text": "m_c lost a life trying to save the king of o_c.",
         "history_text": {
-            "lead_death": "saved the o_c leader"
+            "lead_death": "saved the o_c king"
         },
         "cat_trait": [
             "altruistic",
@@ -712,9 +712,9 @@
             "Leaf-bare",
             "no_body"
         ],
-        "death_text": "m_c was burnt alive while trying to save {PRONOUN/m_c/poss} Clanmates from a fire.",
+        "death_text": "m_c was burnt alive while trying to save {PRONOUN/m_c/poss} Mischiefmates from a fire.",
         "history_text": {
-            "lead_death": "{VERB/m_c/were/was} killed in a fire trying to save {PRONOUN/m_c/poss} Clanmates"
+            "lead_death": "{VERB/m_c/were/was} killed in a fire trying to save {PRONOUN/m_c/poss} Mischiefmates"
         },
         "cat_trait": [
             "altruistic",
@@ -742,9 +742,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c was brutally murdered by a warrior from o_c, who cruelly took all {PRONOUN/m_c/poss} lives.",
+        "death_text": "m_c was brutally murdered by a scavenger from o_c, who cruelly took all {PRONOUN/m_c/poss} lives.",
         "history_text": {
-            "lead_death": "{VERB/m_c/were/was} brutally murdered by a warrior from o_c"
+            "lead_death": "{VERB/m_c/were/was} brutally murdered by a scavenger from o_c"
         },
         "cat_negate_skill": [
             "FIGHTER,2"
@@ -762,9 +762,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c was brutally murdered by the leader of o_c, who cruelly took all {PRONOUN/m_c/poss} lives.",
+        "death_text": "m_c was brutally murdered by the king of o_c, who cruelly took all {PRONOUN/m_c/poss} lives.",
         "history_text": {
-            "lead_death": "{VERB/m_c/were/was} brutally murdered by the leader of o_c"
+            "lead_death": "{VERB/m_c/were/was} brutally murdered by the king of o_c"
         },
         "cat_negate_skill": [
             "FIGHTER,3"
@@ -810,7 +810,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c caught greencough, and died more than once, despite the efforts of StarClan.",
+        "death_text": "m_c caught greencough, and died more than once, despite the efforts of StarColony.",
         "history_text": {
             "lead_death": "contracted greencough"
         }
@@ -835,7 +835,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c caught whitecough, and died more than once, despite the efforts of StarClan.",
+        "death_text": "m_c caught whitecough, and died more than once, despite the efforts of StarColony.",
         "history_text": {
             "lead_death": "contracted whitecough"
         }
@@ -860,7 +860,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c caught yellowcough, and died more than once, despite the efforts of StarClan.",
+        "death_text": "m_c caught yellowcough, and died more than once, despite the efforts of StarColony.",
         "history_text": {
             "lead_death": "contracted yellowcough"
         }
@@ -916,7 +916,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "One day, the deputy finds m_c dead in the leader's den. Seems {PRONOUN/m_c/subject} lost a life to old age.",
+        "death_text": "One day, the deputy finds m_c dead in the kings's den. Seems {PRONOUN/m_c/subject} lost a life to old age.",
         "history_text": {
             "lead_death": "died of old age"
         }
@@ -931,7 +931,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "One day, m_c is found dead in the leader's den, never to rise again. Seems {PRONOUN/m_c/subject} lost the rest of {PRONOUN/m_c/poss} lives to old age.",
+        "death_text": "One day, m_c is found dead in the king's den, never to rise again. Seems {PRONOUN/m_c/subject} lost the rest of {PRONOUN/m_c/poss} lives to old age.",
         "history_text": {
             "lead_death": "died of old age"
         }
@@ -946,7 +946,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "Despite StarClan's efforts, m_c's body just couldn't continue. {PRONOUN/m_c/poss/CAP} remaining lives were taken by old age.",
+        "death_text": "Despite StarColony's efforts, m_c's body just couldn't continue. {PRONOUN/m_c/poss/CAP} remaining lives were taken by old age.",
         "history_text": {
             "lead_death": "died of old age"
         }
@@ -1203,7 +1203,7 @@
         "death_text": "o_c attempted to break into the camp. m_c and r_c are left cold on the ground in the aftermath.",
         "history_text": {
             "reg_death": "This cat died when o_c tried to break into camp.",
-            "lead_death": "tried to defend the Clan from o_c"
+            "lead_death": "tried to defend the Mischief from o_c"
         }
     },
     {

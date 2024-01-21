@@ -47,9 +47,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c was killed while trying to save the medicine cat of o_c.",
+        "death_text": "m_c was killed while trying to save the medicine rat of o_c.",
         "history_text": {
-            "reg_death": "m_c was killed while trying to save o_c's medicine cat."
+            "reg_death": "m_c was killed while trying to save o_c's medicine rat."
         },
         "cat_trait": [
             "bold",
@@ -133,9 +133,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c was killed by the leader of o_c.",
+        "death_text": "m_c was killed by the king of o_c.",
         "history_text": {
-            "reg_death": "m_c was killed by the leader of o_c."
+            "reg_death": "m_c was killed by the king of o_c."
         },
         "cat_negate_skill": [
             "FIGHTER,3"
@@ -153,9 +153,9 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c was killed while trying to save the leader of o_c.",
+        "death_text": "m_c was killed while trying to save the king of o_c.",
         "history_text": {
-            "reg_death": "m_c was killed while trying to save o_c's leader."
+            "reg_death": "m_c was killed while trying to save o_c's king."
         },
         "cat_trait": [
             "bold",

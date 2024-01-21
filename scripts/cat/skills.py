@@ -72,9 +72,9 @@ class SkillPath(Enum):
     )
     KIT = (
         "active imagination",
-        "good kitsitter",
-        "great kitsitter",
-        "beloved kitsitter"
+        "good pinkiesitter",
+        "great pinkiesitter",
+        "beloved pinkiesitter"
     )
     STORY = (
         "lover of stories",
@@ -83,7 +83,7 @@ class SkillPath(Enum):
         "masterful storyteller"
     )
     LORE = (
-        "interested in Clan history",
+        "interested in Mischief history",
         "learner of lore",
         "lore keeper",
         "lore master"
@@ -101,10 +101,10 @@ class SkillPath(Enum):
         "fantastic healer"
     )
     STAR = (
-        "curious about StarClan",
-        "connection to StarClan",
-        "deep StarClan bond",
-        "unshakable StarClan link",
+        "curious about StarColony",
+        "connection to StarColony",
+        "deep StarColony bond",
+        "unshakable StarColony link",
     )
     DARK = (
         "interested in the Dark Forest",
@@ -197,7 +197,7 @@ class Skill():
         SkillPath.LORE: "lorekeeping",
         SkillPath.CAMP: "campkeeping",
         SkillPath.HEALER: "healing",
-        SkillPath.STAR: "StarClan",
+        SkillPath.STAR: "StarColony",
         SkillPath.OMEN: "omen",
         SkillPath.DREAM: "dreaming",
         SkillPath.CLAIRVOYANT: "predicting",
@@ -641,7 +641,7 @@ class CatSkills:
         new_skill = CatSkills()
         
         conversion = {
-            "strong connection to StarClan": (SkillPath.STAR, 2), 
+            "strong connection to StarColony": (SkillPath.STAR, 2), 
             "good healer": (SkillPath.HEALER, 1),
             "great healer": (SkillPath.HEALER, 2),
             "fantastic healer": (SkillPath.HEALER, 3),
@@ -669,9 +669,9 @@ class CatSkills:
             "smart tactician": (SkillPath.INSIGHTFUL, 1),
             "valuable tactician": (SkillPath.INSIGHTFUL, 2),
             "valuable insight": (SkillPath.INSIGHTFUL, 3),
-            "good kitsitter": (SkillPath.KIT, 1),
-            "great kitsitter": (SkillPath.KIT, 2),
-            "beloved kitsitter": (SkillPath.KIT, 3),
+            "good pinkiesitter": (SkillPath.KIT, 1),
+            "great pinkiesitter": (SkillPath.KIT, 2),
+            "beloved pinkiesitter": (SkillPath.KIT, 3),
             "camp keeper": (SkillPath.CAMP, 3),
             "den builder": (SkillPath.CAMP, 2),
             "omen sight": (SkillPath.OMEN, 3),

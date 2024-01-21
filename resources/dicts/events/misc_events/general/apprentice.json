@@ -276,7 +276,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c was seen playing with a kittypet over the border."
+        "event_text": "m_c was seen playing with a fancyrat over the border."
     },
     {
         "camp": "any",
@@ -357,7 +357,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c was seen chasing a kittypet off of the territory."
+        "event_text": "m_c was seen chasing a fancyrat off of the territory."
     },
     {
         "camp": "any",
@@ -377,7 +377,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c was caught sharing prey with a kittypet, who was chased off by a patrol."
+        "event_text": "m_c was caught sharing prey with a fancyrat, who was chased off by a patrol."
     },
     {
         "camp": "any",
@@ -388,7 +388,7 @@
             "Leaf-bare",
             "other_clan"
         ],
-        "event_text": "m_c was loitering around o_c's border, looking for a specific cat."
+        "event_text": "m_c was loitering around o_c's border, looking for a specific rat."
     },
     {
         "camp": "any",
@@ -400,7 +400,7 @@
             "other_clan",
             "rel_down"
         ],
-        "event_text": "m_c was seen arguing, and borderline-fighting with, a cat from o_c."
+        "event_text": "m_c was seen arguing, and borderline-fighting with, a rat from o_c."
     },
     {
         "camp": "any",
@@ -424,7 +424,7 @@
             "other_clan",
             "rel_down"
         ],
-        "event_text": "m_c was seen arguing, and borderline-fighting with, a kittypet."
+        "event_text": "m_c was seen arguing, and borderline-fighting with, a fancyrat."
     },
     {
         "camp": "any",
@@ -434,7 +434,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c was seen talking calmly to a loner, before both cats went their separate ways."
+        "event_text": "m_c was seen talking calmly to a loner, before both rats went their separate ways."
     },
     {
         "camp": "any",
@@ -446,7 +446,7 @@
             "other_clan",
             "rel_up"
         ],
-        "event_text": "m_c was seen speaking calmly to a cat from o_c."
+        "event_text": "m_c was seen speaking calmly to a rat from o_c."
     },
     {
         "camp": "any",
@@ -456,7 +456,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c was seen talking calmly to a loner, before both cats went their separate ways."
+        "event_text": "m_c was seen talking calmly to a loner, before both rats went their separate ways."
     },
     {
         "camp": "any",
@@ -466,7 +466,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c was seen in a very serious conversation with a kittypet, who ran away when another patrol approached."
+        "event_text": "m_c was seen in a very serious conversation with a fancyrat, who ran away when another patrol approached."
     },
     {
         "camp": "any",

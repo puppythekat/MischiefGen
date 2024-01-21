@@ -2,7 +2,7 @@
 	{
 		"id": "neutral_interaction1",
 		"interactions": [
-			"m_c saw r_c the other day, but didn't get a chance to meow hello.",
+			"m_c saw r_c the other day, but didn't get a chance to say hello.",
 			"m_c bickered about something trivial with r_c.",
 			"m_c nods politely as r_c passes by.",
 			"m_c acknowledges r_c with a twitch of {PRONOUN/m_c/poss} whiskers."
@@ -95,7 +95,7 @@
 		"interactions": [
 			"m_c always seems to avoid r_c's attempts at small talk.",
 			"r_c is amused at how m_c manages to look so grumpy all the time.",
-			"m_c avoids running into any cat, but r_c interrupts {PRONOUN/m_c/poss} peaceful silence.",
+			"m_c avoids running into any rat, but r_c interrupts {PRONOUN/m_c/poss} peaceful silence.",
 			"m_c stares at r_c with an unreadable expression."
 		],
 		"main_trait_constraint": [

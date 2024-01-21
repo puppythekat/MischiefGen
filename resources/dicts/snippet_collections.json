@@ -6,7 +6,7 @@
     "dream list should focus on emotional feelings rather than specific happenings",
     "clair (clairvoyance) list should focus on amorphous feelings of things that already happened or could happen",
 
-    "be sure to put your snippet in the relevant 'sense' category (if the list has sense categories).",
+    "be sure to put your snippet in the relevant 'sense' rategory (if the list has sense rategories).",
     "general lists are meant to hold the snippets that fit in any biome",
     "the lists within the lists are where we hold the snippets",
     "snippets that are grouped together in one list are similar enough that we don't want them appearing in the same event together",
@@ -16,7 +16,7 @@
     "sight": {
       "general": [
         ["blood pooling on the ground", "blood dripping from a leaf"],
-        ["spread claws", "a cat's paw devoid of claws"],
+        ["spread claws", "a rat's paw devoid of claws"],
         ["snarling teeth", "bloodied teeth"],
         ["a bird's feather"],
         ["soft fur"],
@@ -25,11 +25,11 @@
         ["hail pounding the ground"],
         ["snow falling softly", "a blizzard raging"],
         ["wind howling"],
-        ["bright sunshine", "the sun", "the sun blotted out by a great shadow", "a wolf eating the sun", "a cat pulling the sun from the sky", "a rabbit stealing the sun", "a warrior's form blocking the sun"],
+        ["bright sunshine", "the sun", "the sun blotted out by a great shadow", "a wolf eating the sun", "a rat pulling the sun from the sky", "a rabbit stealing the sun", "a scavenger's form blocking the sun"],
         ["blinding light", "a trail of light stretching through the camp"],
         ["blazing heat"],
         ["dark clouds", "a bloody red cloud", "rolling clouds", "clouds covering the sky", "a single beam of moonlight from the clouds"],
-        ["rushing fire", "fire engulfing a cat", "fire covering the camp", "fire trapped in stone", "the camp in flames", "an animal leaping from flames"],
+        ["rushing fire", "fire engulfing a rat", "fire covering the camp", "fire trapped in stone", "the camp in flames", "an animal leaping from flames"],
         ["flooding water", "water flowing upwards"],
         ["mud splattered on the rocks"],
         ["rocks falling"],
@@ -44,9 +44,9 @@
         ["the moon", "a blackbird covering the moon", "a bleeding moon"],
         ["the stars", "the stars falling from the sky", "Silverpelt slowly disappearing", "dozens of new stars", "twinkling stars"],
         ["frozen paws"],
-        ["an unyielding fog", "a suffocating fog"],
+        ["an unyielding fog", "a sufforating fog"],
         ["an oppressive darkness", "darkness unending", "a panther-black night", "darkness despite the shining sun"],
-        ["the apprentice den", "the leader's den", "the nursery", "the warrior's den", "the elder's den"],
+        ["the apprentice den", "the king's den", "the nursery", "the scavenger's den", "the elder's den"],
         ["a deep lake"],
         ["a snake eating it's own tail"],
         ["a ghostly pair of eyes"],
@@ -60,11 +60,11 @@
         ["a twig burning from both ends"],
         ["the grin of a wolf"],
         ["a lost object finally returned", "a missing possession finally found"],
-        ["a figure with the voice of StarClan"],
-        ["a cat not yet born"],
-        ["a cat nearly forgotten"],
-        ["a cat covered in blood"],
-        ["a cat standing beside a Twoleg"],
+        ["a figure with the voice of StarColony"],
+        ["a rat not yet born"],
+        ["a rat nearly forgotten"],
+        ["a rat covered in blood"],
+        ["a rat standing beside a Twoleg"],
         ["stones dissolving in water"]
       ],
       "forest": [
@@ -87,22 +87,22 @@
         ["echoing snarls", "the snarl of a friend", "the snarls of an enemy", "snarling from the dark", "hissing", "the hiss of a friend", "an enemy's hiss"],
         ["wailing cries"],
         ["a thundering voice"],
-        ["a kit's mew", "the mewl of a newborn", "the squeal of kittens"],
+        ["a pinkie's mew", "the mewl of a newborn", "the squeal of pinkies"],
         ["the sound of barking"],
-        ["howling in the distance", "a distant howl of pain", "cats howling to the moon"],
+        ["howling in the distance", "a distant howl of pain", "rats howling to the moon"],
         ["a monster roaring"],
         ["the purring of a friend", "the purr of an enemy", "the purr of a mother", "a rumbling purr"],
         ["the squeak of prey being killed", "the squeal of dying prey"],
         ["a bird call", "bird song on a clear morning"],
         ["crashing waves", "the roar of waves in the distance"],
-        ["the sounds of battle", "the screams of fighting cats"],
+        ["the sounds of battle", "the screams of fighting rats"],
         ["the rushing sound of a river"],
         ["their own voice answering them"],
         ["the sound of cracking ice"],
         ["the sound of a heartbeat"],
         ["a whispered message", "whispers of hope long past"],
         ["a dying promise"],
-        ["a cat's final words"]
+        ["a rat's final words"]
 
       ],
       "forest": [
@@ -120,13 +120,13 @@
     },
     "smell": {
       "general": [
-        ["the smell of the medicine cat den"],
-        ["the scent of catmint"],
-        ["the scent of another Clan"],
+        ["the smell of the medicine rat den"],
+        ["the scent of ratmint"],
+        ["the scent of another Mischief"],
         ["the scent of someone long dead"],
         ["the smell of sickness"],
         ["the scent of traveling herbs"],
-        ["pawsteps that smell like no cat"],
+        ["pawsteps that smell like no rat"],
         ["the scent of milk far from the nursery"]
       ],
       "forest": [
@@ -145,7 +145,7 @@
     "emotional": {
       "general": [
         ["the excitement of an apprentice", "an apprentice's vigor", "the naivety of an apprentice"],
-        ["the strength of a warrior", "the steadfastness of a warrior", "a warrior's loyalty"],
+        ["the strength of a scavenger", "the steadfastness of a scavenger", "a scavenger's loyalty"],
         ["the ache of an elder's bones", "the wisdom of an elder"],
         ["the sensation of falling"],
         ["the feeling of flight"],
@@ -197,7 +197,7 @@
         ["an odd pile of soft downy fur", "a tuft of fox fur", "a tuft of badger fur", "a charred scrap of fur"],
         ["a shard of glass"],
         ["withered deathberries"],
-        ["a strangely shaped cloud", "a cat shaped cloud"],
+        ["a strangely shaped cloud", "a rat shaped cloud"],
         ["a gleaming feather", "an oddly shaped feather", "a broken feather", "tattered feathers"],
         ["the tooth of a large predator", "the claw of a large predator", "an old bloody claw"],
         ["an eagle's talon", "the talon of a hawk"],
@@ -238,7 +238,7 @@
     "sound": {
       "general": [
         ["a whispering on the wind"],
-        ["the sound of a cat no longer here"]
+        ["the sound of a rat no longer here"]
       ],
       "forest": [
 
@@ -256,7 +256,7 @@
     "smell": {
       "general": [
         ["the scent of spoiled queen's milk"],
-        ["the scent of a long dead cat"]
+        ["the scent of a long dead rat"]
 
       ],
       "forest": [
@@ -345,15 +345,15 @@
     ["bloodlust", "bloodthirst", "barbarity", "cruelty", "ruthlessness", "malignity"],
     ["hope", "optimism", "wishing on a star"],
     ["faith", "piety", "devotion", "devoutness", "piousness"],
-    ["loyalty", "fealty", "trust", "fidelity", "dedication"],
+    ["loyalty", "fealty", "trust", "fidelity", "dediration"],
     ["love", "care", "compassion", "cherishing", "affection"],
     ["curiosity", "inquisitiveness", "wonder", "wondering", "nosiness"],
     ["inspiration", "an idea", "an impluse"],
-    ["playfulness", "mischief", "friskiness", "impish energy", "roguishness", "kitten-like gaiety"],
+    ["playfulness", "mischief", "friskiness", "impish energy", "roguishness", "pinkie-like gaiety"],
     ["excitement", "thrill", "invigorated", "surprise", "exhilaration"],
     ["secrecy", "concealment", "stealth", "discretion", "subterfuge", "deceit"],
     ["guilt", "shame", "chagrin"],
-    ["cattiness", "petty malice", "bitterness", "asperity"],
+    ["rattiness", "petty malice", "bitterness", "asperity"],
     ["regret", "remorse", "complicity", "culpability"],
     ["focus", "attentive", "obsessive"],
     ["desperation", "distress"]
@@ -375,7 +375,7 @@
         ["the sound of wingbeats in the wind"],
         ["the sounds of a heated argument"],
         ["near silent pawsteps"],
-        ["the soft noises of kits nursing"],
+        ["the soft noises of pinkies nursing"],
         ["a peal of laughter"],
         ["distant wails of grief"]
       ],
@@ -394,7 +394,7 @@
     },
     "smell": {
       "general": [
-        ["the smell of kittypet food"],
+        ["the smell of fancyrat food"],
         ["a strange acidic scent"],
         ["the smell of dirt baked by the sun"],
         ["the smell of rain"]
@@ -417,11 +417,11 @@
         ["blood spilt in battle", "a battle from long ago", "the terror of a battle field"],
         ["a war won", "a battle lost"],
         ["an old rendezvous", "a friendly meeting", "a truce between enemies"],
-        ["a cat's last breath"],
+        ["a rat's last breath"],
         ["a promise kept", "a half-remembered promise", "a promise already broken", "a promise not yet made"],
         ["a story half-remembered"],
         ["the excitement of an apprentice", "an apprentice's vigor", "the naivety of an apprentice"],
-        ["the strength of a warrior", "the steadfastness of a warrior", "a warrior's loyalty"],
+        ["the strength of a scavenger", "the steadfastness of a scavenger", "a scavenger's loyalty"],
         ["the ache of an elder's bones", "an elder's wisdom"],
         ["drowning"],
         ["lingering grief", "grief's sharp impact"],
@@ -455,12 +455,12 @@
         ["deathly still air", "an unseen fire's heat"],
         ["trembling stones"],
         ["falling through the air", "flying through the air"],
-        ["the warmth of a parent", "the embrace of a family","the warmth of family in the darkness before a kit's eyes open"],
+        ["the warmth of a parent", "the embrace of a family","the warmth of family in the darkness before a pinkie's eyes open"],
         ["tails entwining", "the slip of wet fur", "teeth snapping against fur", "claws against a scruff"],
         ["a mentor's touch to an apprentice's forehead"],
         ["slipping on muddy earth despite the dry ground", "sinking into muddy earth"],
         ["paws damp with water", "paws damp with blood", "paws heavy with blood"],
-        ["another cat's violent shove"],
+        ["another rat's violent shove"],
         ["sharpening one's claws against stone"],
         ["wind whipping through fur"]
       ],
@@ -500,8 +500,8 @@
 
   "story_list": {
     "comment_story": [
-    "the general list shouldn't have any 'the cat who ___' snippets, as we don't want to have more than one of these in an event",
-    "only add 'the cat who ___' snippets to biome lists, you can add one snippet to multiple biomes if you feels it fits in more than one"
+    "the general list shouldn't have any 'the rat who ___' snippets, as we don't want to have more than one of these in an event",
+    "only add 'the rat who ___' snippets to biome lists, you can add one snippet to multiple biomes if you feels it fits in more than one"
     ],
     "general": [
       ["The Thieving Fox"],
@@ -514,17 +514,17 @@
       ["The Bird Who Lost Its Wings"]
     ],
     "forest": [
-      ["The Cat Who Became a Porcupine", "The Cat Who Carried the Sun", "The Cat Who Grew Into an Oak", "The Willow Cat",
-        "The Badger Who Befriended a Cat","The Cats Made of Light", "The Cats Made of Shadow"],
+      ["The Rat Who Became a Porcupine", "The Rat Who Carried the Sun", "The Rat Who Grew Into an Oak", "The Willow Rat",
+        "The Badger Who Befriended a Rat","The Rats Made of Light", "The Rats Made of Shadow"],
       ["The Old Forests of the Ancestors", "The Forest's Origin", "The First Seed", "The Squirrel Who Planted the Forest"],
       ["The Star Bugs"],
       ["The Sun-drown Place"]
 
     ],
     "plains": [
-      ["The Cat Who Dug a Tunnel Through The World", "The Blind Hunter Who Saved The Clan", "The Cat Without a Song",
-        "The Cat Who Carried The Sun", "The Cat Made From The Earth", "The Cats Made of Light", "The Great Worm-cat",
-        "The Cats Made of Shadow"],
+      ["The Rat Who Dug a Tunnel Through The World", "The Blind Hunter Who Saved The Mischief", "The Rat Without a Song",
+        "The Rat Who Carried The Sun", "The Rat Made From The Earth", "The Rats Made of Light", "The Great Worm-Rat",
+        "The Rats Made of Shadow"],
       ["the Thunderbeasts"],
       ["How The Great Skytowers Came To Be"],
       ["The Metal Trees of the Twolegs"],
@@ -533,8 +533,8 @@
 
     ],
     "beach": [
-      ["The Cursed Cat", "The Cat Who Carried The Sun", "The Cat Who Swam Over The Sea", "The Fish Who Became a Cat",
-        "The Cat Who Spoke To Fish", "The Cats Made of Shadow"],
+      ["The Cursed Rat", "The Rat Who Carried The Sun", "The Rat Who Swam Over The Sea", "The Fish Who Became a Rat",
+        "The Rat Who Spoke To Fish", "The Rats Made of Shadow"],
       ["The Dolphin's Farewell"],
       ["The Dead's Token"],
       ["The Ocean's Tears", "The Crying Sky"],
@@ -544,8 +544,8 @@
 
     ],
     "mountainous": [
-      ["The Eagle Who Became a Cat", "The She-cat Who Traded Her Voice", "The Cat Who Flew", "The Cat Who Carried The Sun",
-      "The Cats Made of Light", "The Cat Who Moved The Mountains", "The Cats Made of Shadow"],
+      ["The Eagle Who Became a Rat", "The She-Rat Who Traded Her Voice", "The Rat Who Flew", "The Rat Who Carried The Sun",
+      "The Rats Made of Light", "The Rat Who Moved The Mountains", "The Rats Made of Shadow"],
       ["The Mountain's Shadow"],
       ["The Hummingbird's Feather"],
       ["The Betrayal of the Ravens"],

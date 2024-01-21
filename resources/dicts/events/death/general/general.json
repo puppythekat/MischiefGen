@@ -254,15 +254,15 @@
     {
         "camp": "any",
         "tags": [
-            "clan_kits",
+            "clan_pinkies",
             "Newleaf",
             "Greenleaf",
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "m_c saved a kit from a snake, but was bitten in the process. The venom killed {PRONOUN/m_c/object}.",
+        "death_text": "m_c saved a pinkie from a snake, but was bitten in the process. The venom killed {PRONOUN/m_c/object}.",
         "history_text": {
-            "reg_death": "m_c was killed by a snake, while saving a kit."
+            "reg_death": "m_c was killed by a snake, while saving a pinkie."
         },
         "cat_trait": [
             "altruistic",
@@ -327,7 +327,7 @@
         "death_text": "o_c attempted to break into the camp. m_c and r_c are left cold on the ground in the aftermath.",
         "history_text": {
             "reg_death": "This cat died when o_c tried to break into camp.",
-            "lead_death": "tried to defend the Clan from o_c"
+            "lead_death": "tried to defend the Mischief from o_c"
         }
     },
     {
@@ -341,11 +341,11 @@
             "rel_down",
             "war",
             "other_cat",
-            "other_cat_kit"
+            "other_cat_pinkie"
         ],
         "death_text": "o_c attempted to break into the camp. m_c died defending the nursery, r_c huddled beneath {PRONOUN/m_c/poss} cooling body.",
         "history_text": {
-            "reg_death": "m_c died defending r_c from o_c warriors."
+            "reg_death": "m_c died defending r_c from o_c scavengers."
         },
         "cat_trait": [
             "vengeful",
@@ -448,8 +448,8 @@
         ],
         "death_text": "m_c fell into the river and r_c drowned alongside m_c while trying to rescue {PRONOUN/m_c/object}.",
         "history_text": {
-            "reg_death": "m_c drowned alongside a Clanmate.",
-            "lead_death": "drowned alongside a Clanmate"
+            "reg_death": "m_c drowned alongside a Mischiefmate.",
+            "lead_death": "drowned alongside a Mischiefmate"
         },
         "other_cat_trait": [
             "altruistic",
@@ -527,7 +527,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "death_text": "A bad case of greencough strikes the Clan, taking r_c and m_c's lives.",
+        "death_text": "A bad case of greencough strikes the Mischief, taking r_c and m_c's lives.",
         "history_text": {
             "reg_death": "m_c died of greencough.",
             "lead_death": "died of greencough"
@@ -544,7 +544,7 @@
         "camp": "Any",
         "death_text": "m_c has always wondered where {PRONOUN/m_c/subject} came from. {PRONOUN/m_c/subject/CAP} {VERB/m_c/sneak/sneaks} out of camp, intending to find loners who might have some clues about {PRONOUN/m_c/poss} origins. Frantic with worry and confusion after finding m_c's empty nest in the morning, c_n launches a search. They find {PRONOUN/m_c/poss} cooling body after a long search and wonders why {PRONOUN/m_c/subject} decided to leave the safety of c_n, and what killed {PRONOUN/m_c/object}.",
         "history_text": {
-            "reg_death": "Curiosity killed this cat.",
+            "reg_death": "Curiosity killed this rat.",
             "lead_death": "lost a life because of curiosity."
         },
         "backstory_constraint": [
@@ -626,7 +626,7 @@
             "Leaf-bare",
             "war"
         ],
-        "death_text": "m_c sacrificed {PRONOUN/m_c/self} by taking on the role of a messenger, delivering important information that could save {PRONOUN/m_c/poss} Clan. {PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} killed while investigating enemy territory.",
+        "death_text": "m_c sacrificed {PRONOUN/m_c/self} by taking on the role of a messenger, delivering important information that could save {PRONOUN/m_c/poss} Mischief. {PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} killed while investigating enemy territory.",
         "history_text": {
             "reg_death": "m_c was killed investigating enemy territory.",
             "lead_death": "{VERB/m_c/were/was} killed investigating enemy territory."
@@ -656,10 +656,10 @@
             "Leaf-bare",
             "war"
         ],
-        "death_text": "m_c fell into a pit trap set by o_c's warriors.",
+        "death_text": "m_c fell into a pit trap set by o_c's scavengers.",
         "history_text": {
-            "reg_death": "m_c fell into a pit trap set by an enemy Clan.",
-            "lead_death": "fell into a pit trap set by an enemy Clan."
+            "reg_death": "m_c fell into a pit trap set by an enemy Mischief.",
+            "lead_death": "fell into a pit trap set by an enemy Mischief."
         }
     },
     {
@@ -671,7 +671,7 @@
             "Leaf-bare",
             "war"
         ],
-        "death_text": "m_c was hit by a monster while escaping across a Thunderpath from o_c warriors.",
+        "death_text": "m_c was hit by a monster while escaping across a Thunderpath from o_c scavengers.",
         "history_text": {
             "reg_death": "m_c was hit by a monster.",
             "lead_death": "{VERB/m_c/were/was} hit by a monster."

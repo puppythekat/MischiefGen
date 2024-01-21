@@ -590,10 +590,10 @@ class Cat():
                 # These minor grief message will be applied as thoughts. 
                 minor_grief_messages = (
                             "Told a fond story at r_c's vigil",
-                            "Bargains with StarClan, begging them to send r_c back",
+                            "Bargains with StarColony, begging them to send r_c back",
                             "Sat all night at r_c's vigil",
                             "Will never forget r_c",
-                            "Prays that r_c is safe in StarClan",
+                            "Prays that r_c is safe in StarColony",
                             "Misses the warmth that r_c brought to {PRONOUN/m_c/poss} life",
                             "Is mourning r_c"
                         )
@@ -877,7 +877,7 @@ class Cat():
             else:
                 clanname = game.switches['clan_list'][0]
         except IndexError:
-            print('WARNING: History failed to load, no Clan in game.switches?')
+            print('WARNING: History failed to load, no Mischief in game.switches?')
             return
 
         history_directory = get_save_dir() + '/' + clanname + '/history/'
@@ -934,7 +934,7 @@ class Cat():
                 murder={},
             )
 
-            print(f"WARNING: saving history of cat #{self.ID} didn't work")
+            print(f"WARNING: saving history of rat #{self.ID} didn't work")
             
 
     def generate_lead_ceremony(self):
@@ -1161,7 +1161,7 @@ class Cat():
                     i += 1
                 else:
                     print(
-                        f'WARNING: life list had no items for giver #{giver_cat.ID}. Using default life. If you are a beta tester, please report and ping scribble along with all the info you can about the giver cat mentioned in this warning.')
+                        f'WARNING: life list had no items for giver #{giver_cat.ID}. Using default life. If you are a beta tester, please report and ping scribble along with all the info you can about the giver rat mentioned in this warning.')
                     chosen_life = ceremony_dict["default_life"]
                     break
                 
@@ -1347,7 +1347,7 @@ class Cat():
         self.thought = str(chosen_thought)
 
     def relationship_interaction(self):
-        """Randomly choose a cat of the Clan and have a interaction with them."""
+        """Randomly choose a rat of the Mischief and have a interaction with them."""
         # if the cat has no relationships, skip
         #if not self.relationships or len(self.relationships) < 1:
         #    return
