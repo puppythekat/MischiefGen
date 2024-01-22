@@ -109,6 +109,11 @@
     "plural": "jay feathers",
     "singular": "jay feather"
   },
+  "GREY FEATHERS": {
+    "default": "hawk feathers",
+    "plural": "hawk feathers",
+    "singular": "hawk feather"
+  },
   "MOTH WINGS": {
     "default": "moth wings",
     "plural": "moth wings",
@@ -118,6 +123,16 @@
     "default": "cicada wings",
     "plural": "cicada wings",
     "singular": "cicada wing"
+  },
+  "JAY FEATHERS": {
+    "default": "jay feathers",
+    "plural": "jay feathers",
+    "singular": "jay feather"
+  },
+  "CHICKEN MUSHROOM": {
+    "default": "chicken scented mushrooms",
+    "plural": "chicken scented mushrooms",
+    "singular": "a bunch of chicken scented mushrooms"
   },
   "CRIMSON": {
     "default": "crimson leather collar",
@@ -240,9 +255,9 @@
     "singular": "black bell collar"
   },
   "SPIKESBELL": {
-    "default": "spiky bell collar",
-    "plural": "spiky bell collars",
-    "singular": "spikybell collar"
+    "default": "starry bell collar",
+    "plural": "starry bell collars",
+    "singular": "starry bell collar"
   },
   "WHITEBELL": {
     "default": "white bell collar",
@@ -315,9 +330,9 @@
     "singular": "black bow collar"
   },
   "SPIKESBOW": {
-    "default": "gold foil bow collar",
-    "plural": "gold foil bow collars",
-    "singular": "gold foil bow collar"
+    "default": "starry bow collar",
+    "plural": "starry bow collars",
+    "singular": "starry bow collar"
   },
   "WHITEBOW": {
     "default": "white bow collar",

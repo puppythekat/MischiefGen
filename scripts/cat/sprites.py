@@ -392,7 +392,7 @@ class Sprites():
             "BLUEBELLS", "NETTLE", "POPPY", "LAVENDER", "HERBS", "PETALS"]):
             self.make_group('medcatherbs', (a, 1), f'acc_herbs{i}')
         for a, i in enumerate([
-            "OAK LEAVES", "CATMINT", "MAPLE SEED", "JUNIPER"]):
+            "OAK LEAVES", "CATMINT", "MAPLE SEED", "JUNIPER","CHICKEN MUSHROOM","GREY FEATHERS"]):
             self.make_group('medcatherbs', (a, 3), f'acc_herbs{i}')
         self.make_group('medcatherbs', (5, 2), 'acc_herbsDRY HERBS')
 
