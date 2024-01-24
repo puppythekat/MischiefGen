@@ -53,7 +53,7 @@ class AllegiancesScreen(Screens):
                                     container=self.scroll_container, manager=MANAGER))
             self.names_boxes[-1].disable()
             
-            y_pos += 1400 * self.names_boxes[-1].get_relative_rect()[3] / screen_y 
+            y_pos += 1400 * self.names_boxes[-1].get_relative_rect()[3] / screen_y
 
         
         self.scroll_container.set_scrollable_area_dimensions((1360 / 1600 * screen_x, y_pos / 1400 * screen_y))

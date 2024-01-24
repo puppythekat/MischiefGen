@@ -454,7 +454,7 @@ def create_outside_cat(Cat, status, backstory, alive=True, thought=None):
     if not alive:
         new_cat.die()
 
-    thought = "Wonders about those Clan cats they just met"
+    thought = "Wonders about those Mischief rats they just met"
     new_cat.thought = thought
 
     # create relationships - only with outsiders
@@ -953,7 +953,7 @@ def ongoing_event_text_adjust(Cat, text, clan=None, other_clan_name=None):
         else:
             clan_name = str(game.clan.name)
 
-    text = text.replace("c_n", clan_name + "Clan")
+    text = text.replace("c_n", clan_name + "Mischief")
 
     return text
 
@@ -1010,7 +1010,7 @@ def event_text_adjust(Cat,
         else:
             clan_name = str(game.clan.name)
 
-    text = text.replace("c_n", clan_name + "Clan")
+    text = text.replace("c_n", clan_name + "Mischief")
 
     if murder_reveal and victim:
         victim_cat = Cat.fetch_cat(victim)
@@ -1053,7 +1053,7 @@ def leader_ceremony_text_adjust(Cat,
     if extra_lives:
         text = text.replace('[life_num]', str(extra_lives))
 
-    text = text.replace("c_n", str(game.clan.name) + "Clan")
+    text = text.replace("c_n", str(game.clan.name) + "Mischief")
 
     return text
 

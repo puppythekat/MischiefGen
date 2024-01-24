@@ -180,9 +180,9 @@
     "singular": "black leather collar"
   },
   "SPIKES": {
-    "default": "spiky leather collar",
-    "plural": "spiky leather collars",
-    "singular": "spiky leather collar"
+    "default": "starry leather collar",
+    "plural": "starry leather collars",
+    "singular": "starry leather collar"
   },
   "WHITE": {
     "default": "white leather collar",
@@ -405,9 +405,9 @@
     "singular": "black nylon collar"
   },
   "SPIKESNYLON": {
-    "default": "blue and gold nylon collar",
-    "plural": "blue and gold nylon collars",
-    "singular": "blue and gold nylon collar"
+    "default": "starry nylon collar",
+    "plural": "starry nylon collars",
+    "singular": "starry nylon collar"
   },
   "WHITENYLON": {
     "default": "white nylon collar",
