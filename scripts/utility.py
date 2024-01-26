@@ -1341,6 +1341,14 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
             elif cat.pelt.accessory in cat.pelt.collars:
                 new_sprite.blit(sprites.sprites['collars' + cat.pelt.accessory + cat_sprite], (0, 0))
                 
+                
+        if not scars_hidden:
+            for scar in cat.pelt.scars:
+                if scar in cat.pelt.scars2 in ["LEFTEAR", "RIGHTEAR", "NOTAIL", "HALFTAIL", "NOPAW", "NOLEFTEAR", "NORIGHTEAR", "NOEAR"] and cat.pelt.topear == True:
+                    new_sprite.blit(sprites.sprites['scarstop' + scar + cat.pelt.top + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_MIN)
+        else:
+            new_sprite.blit(sprites.sprites['scarsdumbo' + scar + cat.pelt.dumbo + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGBA_MIN)
+            
         # draw ears
         if not dead and cat.pelt.topear == False :
             new_sprite.blit(sprites.sprites['linesdumbo' + cat_sprite], (0, 0))

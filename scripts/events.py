@@ -954,7 +954,7 @@ class Events:
                 game.clan.leader_lives = 9
                 text = ''
                 if game.clan.deputy.personality.trait == 'bloodthirsty':
-                    text = f'{game.clan.deputy.name} has become the new leader. ' \
+                    text = f'{game.clan.deputy.name} has become the new king. ' \
                            f'They stare down at their Mischiefmates with unsheathed claws, ' \
                            f'promising a new era for the Mischiefs.'
                 else:

@@ -117,7 +117,7 @@ class Sprites():
             'maskedcolours', 
             'shadersnewwhite', 'lineartdead', 'lineartdeaddumbo', 'lineartdeadtop', 'lineartdumbo', 'linearttop', 'top','dumbo','tortiepatchesmasks', 
             'tortiepatchesmaskstwo','medcatherbs', 'lineartdf', 'lightingnew', 'fademask',
-            'fadestarclan', 'fadedarkforest'
+            'fadestarclan', 'fadedarkforest', 'missingscarstop', 'missingscarsdumbo'
 
         ]:
             if 'lineart' in x and game.config['fun']['april_fools']:
@@ -383,6 +383,12 @@ class Sprites():
         for a, i in enumerate(
                 ["LEFTEAR", "RIGHTEAR", "NOTAIL", "NOLEFTEAR", "NORIGHTEAR", "NOEAR", "HALFTAIL", "NOPAW"]):
             self.make_group('missingscars', (a, 0), f'scars{i}')
+        for a, i in enumerate(
+                ["LEFTEAR", "RIGHTEAR", "NOTAIL", "NOLEFTEAR", "NORIGHTEAR", "NOEAR", "HALFTAIL", "NOPAW"]):
+            self.make_group('missingscarstop', (a, 0), f'scarsdumbo{i}')
+        for a, i in enumerate(
+                ["LEFTEAR", "RIGHTEAR", "NOTAIL", "NOLEFTEAR", "NORIGHTEAR", "NOEAR", "HALFTAIL", "NOPAW"]):
+            self.make_group('missingscarsdumbo', (a, 0), f'scarstop{i}')
 
             # Accessories
         for a, i in enumerate([

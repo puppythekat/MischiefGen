@@ -80,6 +80,10 @@ class Pelt():
     scars2 = ["LEFTEAR", "RIGHTEAR", "NOTAIL", "HALFTAIL", "NOPAW", "NOLEFTEAR", "NORIGHTEAR", "NOEAR"]
     scars3 = ["SNAKE", "TOETRAP", "BURNPAWS", "BURNTAIL", "BURNBELLY", "BURNRUMP", "FROSTFACE", "FROSTTAIL", "FROSTMITT",
             "FROSTSOCK", "TOE", "SNAKETWO"]
+    
+    scarstop = ["LEFTEAR", "RIGHTEAR", "NOTAIL", "HALFTAIL", "NOPAW", "NOLEFTEAR", "NORIGHTEAR", "NOEAR"]
+    
+    scarsdumbo = ["LEFTEAR", "RIGHTEAR", "NOTAIL", "HALFTAIL", "NOPAW", "NOLEFTEAR", "NORIGHTEAR", "NOEAR"]
 
     # make sure to add plural and singular forms of new accs to acc_display.json so that they will display nicely
     plant_accessories = ["MAPLE LEAF", "HOLLY", "BLUE BERRIES", "FORGET ME NOTS", "RYE STALK", "LAUREL",
@@ -1064,9 +1068,9 @@ class Pelt():
 
         # Now it's time for gender
         if cat.genderalign in ["female", "trans female"]:
-            color_name = f"{color_name} she-cat"
+            color_name = f"{color_name} doe"
         elif cat.genderalign in ["male", "trans male"]:
-            color_name = f"{color_name} tom"
+            color_name = f"{color_name} buck"
         else:
             color_name = f"{color_name} cat"
 
